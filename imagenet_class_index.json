@@ -1,0 +1,1200 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://github.githubassets.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-0zW8Tet7sPvYAFaQsMAZGwWUqQifQiHA/MroWFu+Sd+/LVsCOQXqSt2WYDjeXmyCjwPO6Nfb1vYnvGChRkshqg==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-4e0c320dc6f7f92f54b76793b3bc3c9c.css" />
+  
+    <link crossorigin="anonymous" media="all" integrity="sha512-ht51NgdSlgWDQ2KCpGFEeCdtGH8vA1BlmnOK1DY9Eyu8mcOEPlEoXbLJrKdhf1G+DQ23K6CXeJFdGoe/lvSWeQ==" rel="stylesheet" href="https://github.githubassets.com/assets/github-e3c6d55764859bb5fda4acd9162e1e02.css" />
+    
+    
+    
+    
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>cnn-dog-breed-classifier/imagenet_class_index.json at master · mirceast/cnn-dog-breed-classifier</title>
+    <meta name="description" content="PyTorch implementation of a dog breed classifier using convolutional neural nets. - mirceast/cnn-dog-breed-classifier">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    <meta name="twitter:image:src" content="https://avatars2.githubusercontent.com/u/47155942?s=400&amp;v=4" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary" /><meta name="twitter:title" content="mirceast/cnn-dog-breed-classifier" /><meta name="twitter:description" content="PyTorch implementation of a dog breed classifier using convolutional neural nets. - mirceast/cnn-dog-breed-classifier" />
+    <meta property="og:image" content="https://avatars2.githubusercontent.com/u/47155942?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="mirceast/cnn-dog-breed-classifier" /><meta property="og:url" content="https://github.com/mirceast/cnn-dog-breed-classifier" /><meta property="og:description" content="PyTorch implementation of a dog breed classifier using convolutional neural nets. - mirceast/cnn-dog-breed-classifier" />
+
+  <link rel="assets" href="https://github.githubassets.com/">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6NDQ3NDcxMDk3OjA0MjE1MzcyZmRlOGFiYWNkYzk5NjE0NzVlYzI1NjMxNmUxZTFlNjBlMjI1YzgxZDAxNzc0NTFjZDFkZjBjNTc=--4865fbe95cc4751765651e66a4273cc4ae0e2926">
+  <link rel="sudo-modal" href="/sessions/sudo_modal">
+  <meta name="request-id" content="C46B:7948:19A540:304ADA:5DA9319F" data-pjax-transient>
+
+
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+      <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+    <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+
+  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="C46B:7948:19A540:304ADA:5DA9319F" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-dimension-ga_id" content="" class="js-octo-ga-id" /><meta name="octolytics-dimension-visitor_id" content="2060831786670723534" /><meta name="octolytics-actor-id" content="9557357" /><meta name="octolytics-actor-login" content="iKhushPatel" /><meta name="octolytics-actor-hash" content="266a28ec90e4c04227034ee2fdeb21e95fc258d7aed520e1499d27d20738ff59" />
+<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
+
+
+
+    <meta name="google-analytics" content="UA-3769691-2">
+
+  <meta class="js-ga-set" name="userId" content="53615b41116d5e621b98c8dcaaa70402">
+
+<meta class="js-ga-set" name="dimension1" content="Logged In">
+
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="iKhushPatel">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="YzNmYjRjNDMxYzczOWMzNTMzYzIxMmEyOGFmMzY0NjUzOWE2NzJiMzEzNmJiOTgyOWExNGQzOTI3YzRmM2VlZHx7InJlbW90ZV9hZGRyZXNzIjoiMjQuNTcuMTIuMjIxIiwicmVxdWVzdF9pZCI6IkM0NkI6Nzk0ODoxOUE1NDA6MzA0QURBOjVEQTkzMTlGIiwidGltZXN0YW1wIjoxNTcxMzY5Mzk4LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
+
+    <meta name="enabled-features" content="ACTIONS_V2_ON_MARKETPLACE,MARKETPLACE_FEATURED_BLOG_POSTS,MARKETPLACE_INVOICED_BILLING,MARKETPLACE_SOCIAL_PROOF_CUSTOMERS,MARKETPLACE_TRENDING_SOCIAL_PROOF,MARKETPLACE_RECOMMENDATIONS,MARKETPLACE_PENDING_INSTALLATIONS,NOTIFY_ON_BLOCK,RELATED_ISSUES,GHE_CLOUD_TRIAL">
+
+  <meta name="html-safe-nonce" content="e33a42e70b5db4f3b2460d38b469f78b963d3e00">
+
+  <meta http-equiv="x-pjax-version" content="d7771a419c90630b1cc0240c55abccd0">
+  
+
+      <link href="https://github.com/mirceast/cnn-dog-breed-classifier/commits/master.atom" rel="alternate" title="Recent Commits to cnn-dog-breed-classifier:master" type="application/atom+xml">
+
+  <meta name="go-import" content="github.com/mirceast/cnn-dog-breed-classifier git https://github.com/mirceast/cnn-dog-breed-classifier.git">
+
+  <meta name="octolytics-dimension-user_id" content="47155942" /><meta name="octolytics-dimension-user_login" content="mirceast" /><meta name="octolytics-dimension-repository_id" content="168238898" /><meta name="octolytics-dimension-repository_nwo" content="mirceast/cnn-dog-breed-classifier" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="168238898" /><meta name="octolytics-dimension-repository_network_root_nwo" content="mirceast/cnn-dog-breed-classifier" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
+
+
+    <link rel="canonical" href="https://github.com/mirceast/cnn-dog-breed-classifier/blob/master/imagenet_class_index.json" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://github.githubassets.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+
+  <meta name="webauthn-auth-enabled" content="true">
+
+  <meta name="webauthn-registration-enabled" content="true">
+
+  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-in env-production page-responsive page-blob">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="p-3 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <span class="Progress progress-pjax-loader position-fixed width-full js-pjax-loader-bar">
+      <span class="progress-pjax-loader-bar top-0 left-0" style="width: 0%;"></span>
+    </span>
+
+    
+    
+    
+
+
+          <header class="Header js-details-container Details flex-wrap flex-lg-nowrap p-responsive" role="banner">
+
+    <div class="Header-item d-none d-lg-flex">
+      <a class="Header-link" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+
+    </div>
+
+    <div class="Header-item d-lg-none">
+      <button class="Header-link btn-link js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"/></svg>
+      </button>
+    </div>
+
+    <div class="Header-item Header-item--full flex-column flex-lg-row width-full flex-order-2 flex-lg-order-none mr-0 mr-lg-3 mt-3 mt-lg-0 Details-content--hidden">
+        <div class="header-search flex-self-stretch flex-lg-self-auto mr-0 mr-lg-3 mb-3 mb-lg-0 scoped-search site-scoped-search js-site-search position-relative js-jump-to"
+  role="combobox"
+  aria-owns="jump-to-results"
+  aria-label="Search or jump to"
+  aria-haspopup="listbox"
+  aria-expanded="false"
+>
+  <div class="position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" role="search" aria-label="Site" data-scope-type="Repository" data-scope-id="168238898" data-scoped-search-url="/mirceast/cnn-dog-breed-classifier/search" data-unscoped-search-url="/search" action="/mirceast/cnn-dog-breed-classifier/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+      <label class="form-control input-sm header-search-wrapper p-0 header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
+        <input type="text"
+          class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+          data-hotkey="s,/"
+          name="q"
+          value=""
+          placeholder="Search or jump to…"
+          data-unscoped-placeholder="Search or jump to…"
+          data-scoped-placeholder="Search or jump to…"
+          autocapitalize="off"
+          aria-autocomplete="list"
+          aria-controls="jump-to-results"
+          aria-label="Search or jump to…"
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=P2kpn3HMvaj4P5miATJAaRFs1/QMt2HoSYR97HQe9i5ejP/p9i7yILOgnhE5gypUDqEVSyyM3gg23fM4jcsPtg=="
+          spellcheck="false"
+          autocomplete="off"
+          >
+          <input type="hidden" class="js-site-search-type-field" name="type" >
+            <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
+
+            <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
+              
+<ul class="d-none js-jump-to-suggestions-template-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-suggestion" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+</ul>
+
+<ul class="d-none js-jump-to-no-results-template-container">
+  <li class="d-flex flex-justify-center flex-items-center f5 d-none js-jump-to-suggestion p-2">
+    <span class="text-gray">No suggested jump to results</span>
+  </li>
+</ul>
+
+<ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+
+    <li class="d-flex flex-justify-center flex-items-center p-0 f5 js-jump-to-suggestion">
+      <img src="https://github.githubassets.com/images/spinners/octocat-spinner-128.gif" alt="Octocat Spinner Icon" class="m-2" width="28">
+    </li>
+</ul>
+
+            </div>
+      </label>
+</form>  </div>
+</div>
+
+
+      <nav class="d-flex flex-column flex-lg-row flex-self-stretch flex-lg-self-auto" aria-label="Global">
+    <a class="Header-link d-block d-lg-none py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" data-ga-click="Header, click, Nav menu - item:dashboard:user" aria-label="Dashboard" href="/dashboard">
+      Dashboard
+</a>
+  <a class="js-selected-navigation-item Header-link  mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" data-hotkey="g p" data-ga-click="Header, click, Nav menu - item:pulls context:user" aria-label="Pull requests you created" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls" href="/pulls">
+    Pull requests
+</a>
+  <a class="js-selected-navigation-item Header-link  mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" data-hotkey="g i" data-ga-click="Header, click, Nav menu - item:issues context:user" aria-label="Issues you created" data-selected-links="/issues /issues/assigned /issues/mentioned /issues" href="/issues">
+    Issues
+</a>
+    <div class="mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15">
+      <a class="js-selected-navigation-item Header-link" data-ga-click="Header, click, Nav menu - item:marketplace context:user" data-octo-click="marketplace_click" data-octo-dimensions="location:nav_bar" data-selected-links=" /marketplace" href="/marketplace">
+        Marketplace
+</a>      
+
+    </div>
+
+  <a class="js-selected-navigation-item Header-link  mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore" href="/explore">
+    Explore
+</a>
+
+
+    <a class="Header-link d-block d-lg-none mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" href="https://github.com/iKhushPatel">
+      <img class="avatar" height="20" width="20" alt="@iKhushPatel" src="https://avatars0.githubusercontent.com/u/9557357?s=60&amp;v=4" />
+      iKhushPatel
+</a>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="cd0rdFff0reoGK9YwBZp3AO7SIiKz82K9qRmCduXZs/b8sCDIvDS7EIFnD3epiXTwVSQhakhrURgC8abNOh94A==" />
+      <button type="submit" class="Header-link mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15 d-lg-none btn-link d-block width-full text-left" data-ga-click="Header, sign out, icon:logout" style="padding-left: 2px;">
+        <svg class="octicon octicon-sign-out v-align-middle" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9V7H8V5h4V3l4 3-4 3zm-2 3H6V3L2 1h8v3h1V1c0-.55-.45-1-1-1H1C.45 0 0 .45 0 1v11.38c0 .39.22.73.55.91L6 16.01V13h4c.55 0 1-.45 1-1V8h-1v4z"/></svg>
+        Sign out
+      </button>
+</form></nav>
+
+    </div>
+
+    <div class="Header-item Header-item--full flex-justify-center d-lg-none position-relative">
+      <div class="css-truncate css-truncate-target width-fit position-absolute left-0 right-0 text-center">
+              <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+    <a class="Header-link" href="/mirceast">mirceast</a>
+    /
+    <a class="Header-link" href="/mirceast/cnn-dog-breed-classifier">cnn-dog-breed-classifier</a>
+
+</div>
+    </div>
+
+
+    <div class="Header-item mr-0 mr-lg-3 flex-order-1 flex-lg-order-none">
+      
+
+    <a aria-label="You have no unread notifications" class="Header-link notification-indicator position-relative tooltipped tooltipped-s js-socket-channel js-notification-indicator" data-hotkey="g n" data-ga-click="Header, go to notifications, icon:read" data-channel="notification-changed:9557357" href="/notifications">
+        <span class="mail-status "></span>
+        <svg class="octicon octicon-bell" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 12v1H0v-1l.73-.58c.77-.77.81-2.55 1.19-4.42C2.69 3.23 6 2 6 2c0-.55.45-1 1-1s1 .45 1 1c0 0 3.39 1.23 4.16 5 .38 1.88.42 3.66 1.19 4.42l.66.58H14zm-7 4c1.11 0 2-.89 2-2H5c0 1.11.89 2 2 2z"/></svg>
+</a>
+    </div>
+
+
+    <div class="Header-item position-relative d-none d-lg-flex">
+      <details class="details-overlay details-reset">
+  <summary class="Header-link"
+      aria-label="Create new…"
+      data-ga-click="Header, create new, icon:add">
+    <svg class="octicon octicon-plus" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"/></svg> <span class="dropdown-caret"></span>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw">
+    
+<a role="menuitem" class="dropdown-item" href="/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+  <a role="menuitem" class="dropdown-item" href="/new/import" data-ga-click="Header, import a repository">
+    Import repository
+  </a>
+
+<a role="menuitem" class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, create new gist">
+  New gist
+</a>
+
+  <a role="menuitem" class="dropdown-item" href="/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+  <div role="none" class="dropdown-divider"></div>
+  <div class="dropdown-header">
+    <span title="mirceast/cnn-dog-breed-classifier">This repository</span>
+  </div>
+    <a role="menuitem" class="dropdown-item" href="/mirceast/cnn-dog-breed-classifier/issues/new" data-ga-click="Header, create new issue" data-skip-pjax>
+      New issue
+    </a>
+
+
+  </details-menu>
+</details>
+
+    </div>
+
+    <div class="Header-item position-relative mr-0 d-none d-lg-flex">
+      
+<details class="details-overlay details-reset">
+  <summary class="Header-link"
+    aria-label="View profile and more"
+    data-ga-click="Header, show menu, icon:avatar">
+    <img alt="@iKhushPatel" class="avatar" src="https://avatars3.githubusercontent.com/u/9557357?s=40&amp;v=4" height="20" width="20">
+    <span class="dropdown-caret"></span>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw mt-2" style="width: 180px">
+    <div class="header-nav-current-user css-truncate"><a role="menuitem" class="no-underline user-profile-link px-3 pt-2 pb-2 mb-n2 mt-n1 d-block" href="/iKhushPatel" data-ga-click="Header, go to profile, text:Signed in as">Signed in as <strong class="css-truncate-target">iKhushPatel</strong></a></div>
+    <div role="none" class="dropdown-divider"></div>
+
+      <div class="pl-3 pr-3 f6 user-status-container js-user-status-context pb-1" data-url="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1">
+        
+<div class="js-user-status-container
+    user-status-compact rounded-1 px-2 py-1 mt-2
+    border
+  " data-team-hovercards-enabled>
+  <details class="js-user-status-details details-reset details-overlay details-overlay-dark">
+    <summary class="btn-link btn-block link-gray no-underline js-toggle-user-status-edit toggle-user-status-edit "
+      role="menuitem" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:47155942,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:9557357,&quot;client_id&quot;:&quot;479824791.1515688398&quot;,&quot;originating_request_id&quot;:&quot;C46B:7948:19A540:304ADA:5DA9319F&quot;,&quot;originating_url&quot;:&quot;https://github.com/mirceast/cnn-dog-breed-classifier/blob/master/imagenet_class_index.json&quot;,&quot;referrer&quot;:&quot;https://github.com/mirceast/cnn-dog-breed-classifier&quot;}}" data-hydro-click-hmac="0c2e34eaba7fa08d3e82482a99338430ba8a269d85045487094bef79cd897cc2">
+      <div class="d-flex">
+        <div class="f6 lh-condensed user-status-header
+          d-inline-block v-align-middle
+            user-status-emoji-only-header circle
+            pr-2
+"
+            style="max-width: 29px"
+          >
+          <div class="user-status-emoji-container flex-shrink-0 mr-1 mt-1 lh-condensed-ultra v-align-bottom" style="">
+            <svg class="octicon octicon-smiley" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.81 12.81a6.72 6.72 0 01-2.17 1.45c-.83.36-1.72.53-2.64.53-.92 0-1.81-.17-2.64-.53-.81-.34-1.55-.83-2.17-1.45a6.773 6.773 0 01-1.45-2.17A6.59 6.59 0 011.21 8c0-.92.17-1.81.53-2.64.34-.81.83-1.55 1.45-2.17.62-.62 1.36-1.11 2.17-1.45A6.59 6.59 0 018 1.21c.92 0 1.81.17 2.64.53.81.34 1.55.83 2.17 1.45.62.62 1.11 1.36 1.45 2.17.36.83.53 1.72.53 2.64 0 .92-.17 1.81-.53 2.64-.34.81-.83 1.55-1.45 2.17zM4 6.8v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2H5.2C4.53 8 4 7.47 4 6.8zm5 0v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2h-.59C9.53 8 9 7.47 9 6.8zm4 3.2c-.72 1.88-2.91 3-5 3s-4.28-1.13-5-3c-.14-.39.23-1 .66-1h8.59c.41 0 .89.61.75 1z"/></svg>
+          </div>
+        </div>
+        <div class="
+          d-inline-block v-align-middle
+          
+          
+           css-truncate css-truncate-target 
+           user-status-message-wrapper f6"
+           style="line-height: 20px;" >
+          <div class="d-inline-block text-gray-dark v-align-text-top text-left">
+              <span class="text-gray ml-2">Set status</span>
+          </div>
+        </div>
+      </div>
+    </summary>
+    <details-dialog class="details-dialog rounded-1 anim-fade-in fast Box Box--overlay" role="dialog" tabindex="-1">
+      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="4tP09/ffomLisRQgVO/skETQ0L4yVRRIxJmOrqPcAmC9KGVMtpo7vY7Hmwbg5eZEol7+W9dM9iygg7BJ41dlwQ==" />
+        <div class="Box-header bg-gray border-bottom p-3">
+          <button class="Box-btn-octicon js-toggle-user-status-edit btn-octicon float-right" type="reset" aria-label="Close dialog" data-close-dialog>
+            <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+          </button>
+          <h3 class="Box-title f5 text-bold text-gray-dark">Edit status</h3>
+        </div>
+        <input type="hidden" name="emoji" class="js-user-status-emoji-field" value="">
+        <input type="hidden" name="organization_id" class="js-user-status-org-id-field" value="">
+        <div class="px-3 py-2 text-gray-dark">
+          <div class="js-characters-remaining-container position-relative mt-2">
+            <div class="input-group d-table form-group my-0 js-user-status-form-group">
+              <span class="input-group-button d-table-cell v-align-middle" style="width: 1%">
+                <button type="button" aria-label="Choose an emoji" class="btn-outline btn js-toggle-user-status-emoji-picker btn-open-emoji-picker p-0">
+                  <span class="js-user-status-original-emoji" hidden></span>
+                  <span class="js-user-status-custom-emoji"></span>
+                  <span class="js-user-status-no-emoji-icon" >
+                    <svg class="octicon octicon-smiley" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.81 12.81a6.72 6.72 0 01-2.17 1.45c-.83.36-1.72.53-2.64.53-.92 0-1.81-.17-2.64-.53-.81-.34-1.55-.83-2.17-1.45a6.773 6.773 0 01-1.45-2.17A6.59 6.59 0 011.21 8c0-.92.17-1.81.53-2.64.34-.81.83-1.55 1.45-2.17.62-.62 1.36-1.11 2.17-1.45A6.59 6.59 0 018 1.21c.92 0 1.81.17 2.64.53.81.34 1.55.83 2.17 1.45.62.62 1.11 1.36 1.45 2.17.36.83.53 1.72.53 2.64 0 .92-.17 1.81-.53 2.64-.34.81-.83 1.55-1.45 2.17zM4 6.8v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2H5.2C4.53 8 4 7.47 4 6.8zm5 0v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2h-.59C9.53 8 9 7.47 9 6.8zm4 3.2c-.72 1.88-2.91 3-5 3s-4.28-1.13-5-3c-.14-.39.23-1 .66-1h8.59c.41 0 .89.61.75 1z"/></svg>
+                  </span>
+                </button>
+              </span>
+              <text-expander keys=": @" data-mention-url="/autocomplete/user-suggestions" data-emoji-url="/autocomplete/emoji">
+                <input
+                  type="text"
+                  autocomplete="off"
+                  data-no-org-url="/autocomplete/user-suggestions"
+                  data-org-url="/suggestions?mention_suggester=1"
+                  data-maxlength="80"
+                  class="d-table-cell width-full form-control js-user-status-message-field js-characters-remaining-field"
+                  placeholder="What's happening?"
+                  name="message"
+                  value=""
+                  aria-label="What is your current status?">
+              </text-expander>
+              <div class="error">Could not update your status, please try again.</div>
+            </div>
+            <div style="margin-left: 53px" class="my-1 text-small label-characters-remaining js-characters-remaining" data-suffix="remaining" hidden>
+              80 remaining
+            </div>
+          </div>
+          <include-fragment class="js-user-status-emoji-picker" data-url="/users/status/emoji"></include-fragment>
+          <div class="overflow-auto ml-n3 mr-n3 px-3 border-bottom" style="max-height: 33vh">
+            <div class="user-status-suggestions js-user-status-suggestions collapsed overflow-hidden">
+              <h4 class="f6 text-normal my-3">Suggestions:</h4>
+              <div class="mx-3 mt-2 clearfix">
+                  <div class="float-left col-6">
+                      <button type="button" value=":palm_tree:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
+                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
+                          <g-emoji alias="palm_tree" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f334.png">🌴</g-emoji>
+                        </div>
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
+                          On vacation
+                        </div>
+                      </button>
+                      <button type="button" value=":face_with_thermometer:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
+                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
+                          <g-emoji alias="face_with_thermometer" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f912.png">🤒</g-emoji>
+                        </div>
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
+                          Out sick
+                        </div>
+                      </button>
+                  </div>
+                  <div class="float-left col-6">
+                      <button type="button" value=":house:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
+                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
+                          <g-emoji alias="house" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3e0.png">🏠</g-emoji>
+                        </div>
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
+                          Working from home
+                        </div>
+                      </button>
+                      <button type="button" value=":dart:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
+                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
+                          <g-emoji alias="dart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3af.png">🎯</g-emoji>
+                        </div>
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
+                          Focusing
+                        </div>
+                      </button>
+                  </div>
+              </div>
+            </div>
+            <div class="user-status-limited-availability-container">
+              <div class="form-checkbox my-0">
+                <input type="checkbox" name="limited_availability" value="1" class="js-user-status-limited-availability-checkbox" data-default-message="I may be slow to respond." aria-describedby="limited-availability-help-text-truncate-true-compact-true" id="limited-availability-truncate-true-compact-true">
+                <label class="d-block f5 text-gray-dark mb-1" for="limited-availability-truncate-true-compact-true">
+                  Busy
+                </label>
+                <p class="note" id="limited-availability-help-text-truncate-true-compact-true">
+                  When others mention you, assign you, or request your review,
+                  GitHub will let them know that you have limited availability.
+                </p>
+              </div>
+            </div>
+          </div>
+            
+
+<div class="d-inline-block f5 mr-2 pt-3 pb-2" >
+  <div class="d-inline-block mr-1">
+    Clear status
+  </div>
+
+  <details class="js-user-status-expire-drop-down f6 dropdown details-reset details-overlay d-inline-block mr-2">
+    <summary class="f5 btn-link link-gray-dark border px-2 py-1 rounded-1" aria-haspopup="true">
+      <div class="js-user-status-expiration-interval-selected d-inline-block v-align-baseline">
+        Never
+      </div>
+      <div class="dropdown-caret"></div>
+    </summary>
+
+    <ul class="dropdown-menu dropdown-menu-se pl-0 overflow-auto" style="width: 220px; max-height: 15.5em">
+      <li>
+        <button type="button" class="btn-link dropdown-item js-user-status-expire-button ws-normal" title="Never">
+          <span class="d-inline-block text-bold mb-1">Never</span>
+          <div class="f6 lh-condensed">Keep this status until you clear your status or edit your status.</div>
+        </button>
+      </li>
+      <li class="dropdown-divider" role="none"></li>
+        <li>
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 30 minutes" value="2019-10-17T23:59:58-04:00">
+            in 30 minutes
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 1 hour" value="2019-10-18T00:29:58-04:00">
+            in 1 hour
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 4 hours" value="2019-10-18T03:29:58-04:00">
+            in 4 hours
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="today" value="2019-10-17T23:59:59-04:00">
+            today
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="this week" value="2019-10-20T23:59:59-04:00">
+            this week
+          </button>
+        </li>
+    </ul>
+  </details>
+  <input class="js-user-status-expiration-date-input" type="hidden" name="expires_at" value="">
+</div>
+
+          <include-fragment class="js-user-status-org-picker" data-url="/users/status/organizations"></include-fragment>
+        </div>
+        <div class="d-flex flex-items-center flex-justify-between p-3 border-top">
+          <button type="submit" disabled class="width-full btn btn-primary mr-2 js-user-status-submit">
+            Set status
+          </button>
+          <button type="button" disabled class="width-full js-clear-user-status-button btn ml-2 ">
+            Clear status
+          </button>
+        </div>
+</form>    </details-dialog>
+  </details>
+</div>
+
+      </div>
+      <div role="none" class="dropdown-divider"></div>
+
+
+    <a role="menuitem" class="dropdown-item" href="/iKhushPatel" data-ga-click="Header, go to profile, text:your profile">Your profile</a>
+
+
+    <a role="menuitem" class="dropdown-item" href="/iKhushPatel?tab=repositories" data-ga-click="Header, go to repositories, text:your repositories">Your repositories</a>
+
+    <a role="menuitem" class="dropdown-item" href="/iKhushPatel?tab=projects" data-ga-click="Header, go to projects, text:your projects">Your projects</a>
+
+    <a role="menuitem" class="dropdown-item" href="/iKhushPatel?tab=stars" data-ga-click="Header, go to starred repos, text:your stars">Your stars</a>
+      <a role="menuitem" class="dropdown-item" href="https://gist.github.com/mine" data-ga-click="Header, your gists, text:your gists">Your gists</a>
+
+
+
+    <div role="none" class="dropdown-divider"></div>
+      
+<div id="feature-enrollment-toggle" class="hide-sm hide-md feature-preview-details position-relative">
+  <button
+    type="button"
+    class="dropdown-item btn-link"
+    data-feature-preview-trigger-url="/users/iKhushPatel/feature_previews"
+    data-hydro-details="{&quot;event_type&quot;:&quot;feature_preview.clicks.close_modal&quot;,&quot;payload&quot;:{&quot;client_id&quot;:&quot;479824791.1515688398&quot;,&quot;originating_request_id&quot;:&quot;C46B:7948:19A540:304ADA:5DA9319F&quot;,&quot;originating_url&quot;:&quot;https://github.com/mirceast/cnn-dog-breed-classifier/blob/master/imagenet_class_index.json&quot;,&quot;referrer&quot;:&quot;https://github.com/mirceast/cnn-dog-breed-classifier&quot;,&quot;user_id&quot;:9557357}}"
+    data-hydro-hmac="993690411dcabb1c1925dacf176df29aecdaef8c746818682dcd740148eb0bc1"
+  >
+    Feature preview
+  </button>
+</div>
+
+    <a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a>
+    <a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="IDrvgr2PEUpD8umz2mRBJIoahg7Scaxk2D0fW2S4+mSKFQR1yKAREanv2tbE1A0rSPVeA/GfzKpOkr/Ji8fhSw==" />
+      
+      <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
+        Sign out
+      </button>
+</form>  </details-menu>
+</details>
+
+    </div>
+
+  </header>
+
+      
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+
+    <div id="js-flash-container">
+
+</div>
+
+
+
+  <div class="application-main " data-commit-hovercards-enabled>
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <main  >
+      
+
+
+  
+
+      <div class="border-bottom shelf intro-shelf js-notice mb-0 pb-4">
+  <div class="width-full container">
+    <div class="width-full mx-auto shelf-content">
+      <h2 class="shelf-title">Learn Git and GitHub without any code!</h2>
+      <p class="shelf-lead">
+          Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+      </p>
+      <a class="btn btn-primary shelf-cta" target="_blank" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;READ_GUIDE&quot;,&quot;repository_id&quot;:168238898,&quot;client_id&quot;:&quot;479824791.1515688398&quot;,&quot;originating_request_id&quot;:&quot;C46B:7948:19A540:304ADA:5DA9319F&quot;,&quot;originating_url&quot;:&quot;https://github.com/mirceast/cnn-dog-breed-classifier/blob/master/imagenet_class_index.json&quot;,&quot;referrer&quot;:&quot;https://github.com/mirceast/cnn-dog-breed-classifier&quot;,&quot;user_id&quot;:9557357}}" data-hydro-click-hmac="d5bd91f32a0fa5ecd0b1ba07ffa6567b8e74745713f14f8f74dbc7a0d49b59e5" href="https://guides.github.com/activities/hello-world/">Read the guide</a>
+    </div>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="shelf-dismiss js-notice-dismiss" action="/dashboard/dismiss_bootcamp" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="delete" /><input type="hidden" name="authenticity_token" value="HH+rp3kfmnVSxniDHjqutafMUWprmaMnHRVTlkSp3dlrWBwtmmL7IdKIR/D/pkenDZMFxOt00b9jQv/33xof5g==" />
+      <button name="button" type="submit" class="mr-1 close-button tooltipped tooltipped-w" aria-label="Hide this notice forever" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;DISMISS_BANNER&quot;,&quot;repository_id&quot;:168238898,&quot;client_id&quot;:&quot;479824791.1515688398&quot;,&quot;originating_request_id&quot;:&quot;C46B:7948:19A540:304ADA:5DA9319F&quot;,&quot;originating_url&quot;:&quot;https://github.com/mirceast/cnn-dog-breed-classifier/blob/master/imagenet_class_index.json&quot;,&quot;referrer&quot;:&quot;https://github.com/mirceast/cnn-dog-breed-classifier&quot;,&quot;user_id&quot;:9557357}}" data-hydro-click-hmac="74d9e83f6847707b96c22cf8f6f1ffc28f9d74d670245039fe07a701b4db209c">
+        <svg aria-label="Hide this notice forever" class="octicon octicon-x v-align-text-top" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+</button></form>  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav pt-0 pt-lg-4 ">
+    <div class="repohead-details-container clearfix container-lg p-responsive d-none d-lg-block">
+
+      <ul class="pagehead-actions">
+
+
+
+    <li hidden>
+      <include-fragment src="/mirceast/cnn-dog-breed-classifier/used_by_count">
+</include-fragment>
+    </li>
+
+  <li>
+    
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="clearfix js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="IOGZNBwnXdE1goB4NYxAQ6Gcb+sR6n9nqIN9kMZLMAAbOk1YainpO8JdXlUpAUowDUhEhjBXYDnWxjzr2y1d+w==" />      <input type="hidden" name="repository_id" value="168238898">
+
+      <details class="details-reset details-overlay select-menu float-left">
+        <summary class="select-menu-button float-left btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:168238898,&quot;client_id&quot;:&quot;479824791.1515688398&quot;,&quot;originating_request_id&quot;:&quot;C46B:7948:19A540:304ADA:5DA9319F&quot;,&quot;originating_url&quot;:&quot;https://github.com/mirceast/cnn-dog-breed-classifier/blob/master/imagenet_class_index.json&quot;,&quot;referrer&quot;:&quot;https://github.com/mirceast/cnn-dog-breed-classifier&quot;,&quot;user_id&quot;:9557357}}" data-hydro-click-hmac="e877d22930329d10bb9c18d0ed61def8dca7f6fee958c5ae351a14ca32df222f" data-ga-click="Repository, click Watch settings, action:blob#show">          <span data-menu-button>
+              <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+              Watch
+          </span>
+</summary>        <details-menu
+          class="select-menu-modal position-absolute mt-5"
+          style="z-index: 99;">
+          <div class="select-menu-header">
+            <span class="select-menu-title">Notifications</span>
+          </div>
+          <div class="select-menu-list">
+            <button type="submit" name="do" value="included" class="select-menu-item width-full" aria-checked="true" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Not watching</span>
+                <span class="description">Be notified only when participating or @mentioned.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                  Watch
+                </span>
+              </div>
+            </button>
+
+            <button type="submit" name="do" value="release_only" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Releases only</span>
+                <span class="description">Be notified of new releases, and when participating or @mentioned.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                  Unwatch releases
+                </span>
+              </div>
+            </button>
+
+            <button type="submit" name="do" value="subscribed" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Watching</span>
+                <span class="description">Be notified of all conversations.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                  Unwatch
+                </span>
+              </div>
+            </button>
+
+            <button type="submit" name="do" value="ignore" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Ignoring</span>
+                <span class="description">Never be notified.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-mute v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 2.81v10.38c0 .67-.81 1-1.28.53L3 10H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h2l3.72-3.72C7.19 1.81 8 2.14 8 2.81zm7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06L11.44 8 9.47 9.97l1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06L13.56 8l1.97-1.97z"/></svg>
+                  Stop ignoring
+                </span>
+              </div>
+            </button>
+          </div>
+        </details-menu>
+      </details>
+        <a class="social-count js-social-count"
+          href="/mirceast/cnn-dog-breed-classifier/watchers"
+          aria-label="0 users are watching this repository">
+          0
+        </a>
+</form>
+  </li>
+
+  <li>
+      <div class="js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/mirceast/cnn-dog-breed-classifier/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="m9oA0whOcAd5ZSOzH/GTSHv35e0gGkttPLZOcx7TwbfCjNN7n+pOBMlMkuql7LvakCVrmGRMNoom1kDa7DP3qw==" />
+      <input type="hidden" name="context" value="repository"></input>
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar mirceast/cnn-dog-breed-classifier" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:168238898,&quot;client_id&quot;:&quot;479824791.1515688398&quot;,&quot;originating_request_id&quot;:&quot;C46B:7948:19A540:304ADA:5DA9319F&quot;,&quot;originating_url&quot;:&quot;https://github.com/mirceast/cnn-dog-breed-classifier/blob/master/imagenet_class_index.json&quot;,&quot;referrer&quot;:&quot;https://github.com/mirceast/cnn-dog-breed-classifier&quot;,&quot;user_id&quot;:9557357}}" data-hydro-click-hmac="c42c8545881637bdd5bb6f4ef690c3a5149c61771fced3a7b81acc29df48e4e9" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+        Unstar
+</button>        <a class="social-count js-social-count" href="/mirceast/cnn-dog-breed-classifier/stargazers"
+           aria-label="0 users starred this repository">
+           0
+        </a>
+</form>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/mirceast/cnn-dog-breed-classifier/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="5PGllalyVakSvq1YM/w8FraBMeZZLq5i5aXTXOyn5lpMv8+CfQjmB5tU/DZYVLdvRBmSmZy8ws/L5ZwQjt6NFg==" />
+      <input type="hidden" name="context" value="repository"></input>
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Star mirceast/cnn-dog-breed-classifier" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:168238898,&quot;client_id&quot;:&quot;479824791.1515688398&quot;,&quot;originating_request_id&quot;:&quot;C46B:7948:19A540:304ADA:5DA9319F&quot;,&quot;originating_url&quot;:&quot;https://github.com/mirceast/cnn-dog-breed-classifier/blob/master/imagenet_class_index.json&quot;,&quot;referrer&quot;:&quot;https://github.com/mirceast/cnn-dog-breed-classifier&quot;,&quot;user_id&quot;:9557357}}" data-hydro-click-hmac="bc005304f2ee7566469ab8d1577ecaa889c316ade550f4c7667904e6a7caad52" data-ga-click="Repository, click star button, action:blob#show; text:Star">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+        Star
+</button>        <a class="social-count js-social-count" href="/mirceast/cnn-dog-breed-classifier/stargazers"
+           aria-label="0 users starred this repository">
+          0
+        </a>
+</form>  </div>
+
+  </li>
+
+  <li>
+          <details class="details-reset details-overlay details-overlay-dark d-inline-block float-left">
+            <summary class="btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FORK_BUTTON&quot;,&quot;repository_id&quot;:168238898,&quot;client_id&quot;:&quot;479824791.1515688398&quot;,&quot;originating_request_id&quot;:&quot;C46B:7948:19A540:304ADA:5DA9319F&quot;,&quot;originating_url&quot;:&quot;https://github.com/mirceast/cnn-dog-breed-classifier/blob/master/imagenet_class_index.json&quot;,&quot;referrer&quot;:&quot;https://github.com/mirceast/cnn-dog-breed-classifier&quot;,&quot;user_id&quot;:9557357}}" data-hydro-click-hmac="c0317aa82c8230701f8ad689c6f0ff6fc60ea4cae0a26164e18751899b89e297" data-ga-click="Repository, show fork modal, action:blob#show; text:Fork" title="Fork your own copy of mirceast/cnn-dog-breed-classifier to your account">              <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+              Fork
+</summary>            <details-dialog
+              class="anim-fade-in fast Box Box--overlay d-flex flex-column"
+              src="/mirceast/cnn-dog-breed-classifier/fork?fragment=1"
+              preload>
+              <div class="Box-header">
+                <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
+                  <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+                </button>
+                <h3 class="Box-title">Fork cnn-dog-breed-classifier</h3>
+              </div>
+              <div class="overflow-auto text-center">
+                <include-fragment>
+                  <div class="octocat-spinner my-3" aria-label="Loading..."></div>
+                  <p class="f5 text-gray">If this dialog fails to load, you can visit <a href="/mirceast/cnn-dog-breed-classifier/fork">the fork page</a> directly.</p>
+                </include-fragment>
+              </div>
+            </details-dialog>
+          </details>
+
+    <a href="/mirceast/cnn-dog-breed-classifier/network/members" class="social-count"
+       aria-label="2 users forked this repository">
+      2
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+    <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a class="url fn" rel="author" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=47155942" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/mirceast">mirceast</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a data-pjax="#js-repo-pjax-container" href="/mirceast/cnn-dog-breed-classifier">cnn-dog-breed-classifier</a></strong>
+  
+
+</h1>
+
+    </div>
+    
+<nav class="hx_reponav reponav js-repo-nav js-sidenav-container-pjax container-lg p-responsive d-none d-lg-block"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+    aria-label="Repository"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a class="js-selected-navigation-item selected reponav-item" itemprop="url" data-hotkey="g c" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /mirceast/cnn-dog-breed-classifier" href="/mirceast/cnn-dog-breed-classifier">
+      <svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /mirceast/cnn-dog-breed-classifier/issues" href="/mirceast/cnn-dog-breed-classifier/issues">
+        <svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">0</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a data-hotkey="g p" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /mirceast/cnn-dog-breed-classifier/pulls" href="/mirceast/cnn-dog-breed-classifier/pulls">
+      <svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">0</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+
+    <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /mirceast/cnn-dog-breed-classifier/projects" href="/mirceast/cnn-dog-breed-classifier/projects">
+      <svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      Projects
+      <span class="Counter" >0</span>
+</a>
+
+    <a class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /mirceast/cnn-dog-breed-classifier/wiki" href="/mirceast/cnn-dog-breed-classifier/wiki">
+      <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
+      Wiki
+</a>
+    <a data-skip-pjax="true" class="js-selected-navigation-item reponav-item" data-selected-links="security alerts policy code_scanning /mirceast/cnn-dog-breed-classifier/security/advisories" href="/mirceast/cnn-dog-breed-classifier/security/advisories">
+      <svg class="octicon octicon-shield" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 2l7-2 7 2v6.02C14 12.69 8.69 16 7 16c-1.69 0-7-3.31-7-7.98V2zm1 .75L7 1l6 1.75v5.268C13 12.104 8.449 15 7 15c-1.449 0-6-2.896-6-6.982V2.75zm1 .75L7 2v12c-1.207 0-5-2.482-5-5.985V3.5z"/></svg>
+      Security
+</a>
+    <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse people /mirceast/cnn-dog-breed-classifier/pulse" href="/mirceast/cnn-dog-breed-classifier/pulse">
+      <svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+      Insights
+</a>
+
+</nav>
+
+  <div class="reponav-wrapper reponav-small d-lg-none">
+  <nav class="reponav js-reponav text-center no-wrap"
+       itemscope
+       itemtype="http://schema.org/BreadcrumbList">
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a class="js-selected-navigation-item selected reponav-item" itemprop="url" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /mirceast/cnn-dog-breed-classifier" href="/mirceast/cnn-dog-breed-classifier">
+        <span itemprop="name">Code</span>
+        <meta itemprop="position" content="1">
+</a>    </span>
+
+      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /mirceast/cnn-dog-breed-classifier/issues" href="/mirceast/cnn-dog-breed-classifier/issues">
+          <span itemprop="name">Issues</span>
+          <span class="Counter">0</span>
+          <meta itemprop="position" content="2">
+</a>      </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /mirceast/cnn-dog-breed-classifier/pulls" href="/mirceast/cnn-dog-breed-classifier/pulls">
+        <span itemprop="name">Pull requests</span>
+        <span class="Counter">0</span>
+        <meta itemprop="position" content="3">
+</a>    </span>
+
+      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /mirceast/cnn-dog-breed-classifier/projects" href="/mirceast/cnn-dog-breed-classifier/projects">
+          <span itemprop="name">Projects</span>
+          <span class="Counter">0</span>
+          <meta itemprop="position" content="4">
+</a>      </span>
+
+      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_wiki /mirceast/cnn-dog-breed-classifier/wiki" href="/mirceast/cnn-dog-breed-classifier/wiki">
+          <span itemprop="name">Wiki</span>
+          <meta itemprop="position" content="5">
+</a>      </span>
+
+      <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="security alerts policy code_scanning /mirceast/cnn-dog-breed-classifier/security/advisories" href="/mirceast/cnn-dog-breed-classifier/security/advisories">
+        <span itemprop="name">Security</span>
+        <meta itemprop="position" content="6">
+</a>
+      <a class="js-selected-navigation-item reponav-item" data-selected-links="pulse /mirceast/cnn-dog-breed-classifier/pulse" href="/mirceast/cnn-dog-breed-classifier/pulse">
+        Pulse
+</a>
+      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="community /mirceast/cnn-dog-breed-classifier/community" href="/mirceast/cnn-dog-breed-classifier/community">
+          Community
+</a>      </span>
+
+  </nav>
+</div>
+
+
+  </div>
+<div class="container-lg clearfix new-discussion-timeline experiment-repo-nav  p-responsive">
+  <div class="repository-content ">
+
+    
+    
+
+
+  
+
+
+    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/mirceast/cnn-dog-breed-classifier/blob/2b55c0c7fb5254099792803b29bfba77db7d6d01/imagenet_class_index.json">Permalink</a>
+
+    <!-- blob contrib key: blob_contributors:v21:8adcf1cfaf62855d3917c747f2b65862 -->
+      
+
+    <div class="d-flex flex-items-start flex-shrink-0 pb-3 flex-column flex-md-row">
+      <span class="d-flex flex-justify-between width-full width-md-auto">
+        
+<details class="details-reset details-overlay select-menu branch-select-menu  hx_rsm" id="branch-select-menu">
+  <summary class="btn btn-sm select-menu-button css-truncate"
+           data-hotkey="w"
+           title="Switch branches or tags">
+    <i>Branch:</i>
+    <span class="css-truncate-target" data-menu-button>master</span>
+  </summary>
+
+  <details-menu class="select-menu-modal hx_rsm-modal position-absolute" style="z-index: 99;" src="/mirceast/cnn-dog-breed-classifier/ref-list/master/imagenet_class_index.json?source_action=show&amp;source_controller=blob" preload>
+    <include-fragment class="select-menu-loading-overlay anim-pulse">
+      <svg height="32" class="octicon octicon-octoface" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M14.7 5.34c.13-.32.55-1.59-.13-3.31 0 0-1.05-.33-3.44 1.3-1-.28-2.07-.32-3.13-.32s-2.13.04-3.13.32c-2.39-1.64-3.44-1.3-3.44-1.3-.68 1.72-.26 2.99-.13 3.31C.49 6.21 0 7.33 0 8.69 0 13.84 3.33 15 7.98 15S16 13.84 16 8.69c0-1.36-.49-2.48-1.3-3.35zM8 14.02c-3.3 0-5.98-.15-5.98-3.35 0-.76.38-1.48 1.02-2.07 1.07-.98 2.9-.46 4.96-.46 2.07 0 3.88-.52 4.96.46.65.59 1.02 1.3 1.02 2.07 0 3.19-2.68 3.35-5.98 3.35zM5.49 9.01c-.66 0-1.2.8-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.54-1.78-1.2-1.78zm5.02 0c-.66 0-1.2.79-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.53-1.78-1.2-1.78z"/></svg>
+    </include-fragment>
+  </details-menu>
+</details>
+
+        <div class="BtnGroup flex-shrink-0 d-md-none">
+          <a href="/mirceast/cnn-dog-breed-classifier/find/master"
+                class="js-pjax-capture-input btn btn-sm BtnGroup-item"
+                data-pjax
+                data-hotkey="t">
+            Find file
+          </a>
+          <clipboard-copy value="imagenet_class_index.json" class="btn btn-sm BtnGroup-item">
+            Copy path
+          </clipboard-copy>
+        </div>
+      </span>
+      <h2 id="blob-path" class="breadcrumb flex-auto min-width-0 text-normal flex-md-self-center ml-md-2 mr-md-3 my-2 my-md-0">
+        <span class="js-repo-root text-bold"><span class="js-path-segment"><a data-pjax="true" href="/mirceast/cnn-dog-breed-classifier"><span>cnn-dog-breed-classifier</span></a></span></span><span class="separator">/</span><strong class="final-path">imagenet_class_index.json</strong>
+      </h2>
+
+      <div class="BtnGroup flex-shrink-0 d-none d-md-inline-block">
+        <a href="/mirceast/cnn-dog-breed-classifier/find/master"
+              class="js-pjax-capture-input btn btn-sm BtnGroup-item"
+              data-pjax
+              data-hotkey="t">
+          Find file
+        </a>
+        <clipboard-copy value="imagenet_class_index.json" class="btn btn-sm BtnGroup-item">
+          Copy path
+        </clipboard-copy>
+      </div>
+    </div>
+
+
+
+    <include-fragment src="/mirceast/cnn-dog-breed-classifier/contributors/master/imagenet_class_index.json" class="Box Box--condensed commit-loader">
+      <div class="Box-body bg-blue-light f6">
+        Fetching contributors&hellip;
+      </div>
+
+      <div class="Box-body d-flex flex-items-center" >
+          <img alt="" class="loader-loading mr-2" src="https://github.githubassets.com/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" height="16" />
+        <span class="text-red h6 loader-error">Cannot retrieve contributors at this time</span>
+      </div>
+</include-fragment>
+
+
+
+
+    <div class="Box mt-3 position-relative">
+      
+<div class="Box-header py-2 d-flex flex-column flex-shrink-0 flex-md-row flex-md-items-center">
+  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+
+      1 lines (1 sloc)
+      <span class="file-info-divider"></span>
+    34.5 KB
+  </div>
+
+  <div class="d-flex py-1 py-md-0 flex-auto flex-order-1 flex-md-order-2 flex-sm-grow-0 flex-justify-between">
+
+    <div class="BtnGroup">
+      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/mirceast/cnn-dog-breed-classifier/raw/master/imagenet_class_index.json">Raw</a>
+        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/mirceast/cnn-dog-breed-classifier/blame/master/imagenet_class_index.json">Blame</a>
+      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/mirceast/cnn-dog-breed-classifier/commits/master/imagenet_class_index.json">History</a>
+    </div>
+
+
+    <div>
+            <a class="btn-octicon tooltipped tooltipped-nw hide-sm"
+               href="x-github-client://openRepo/https://github.com/mirceast/cnn-dog-breed-classifier?branch=master&amp;filepath=imagenet_class_index.json"
+               aria-label="Open this file in GitHub Desktop"
+               data-ga-click="Repository, open with desktop, type:windows">
+                <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
+            </a>
+
+            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/mirceast/cnn-dog-breed-classifier/edit/master/imagenet_class_index.json" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="2SCAnYF3kvWSODKws0aeLhiXgxdjUWEEdNp26e5lG84fKMSdESXPqSixizPROI6WQ/o/m7hVheG63F6kKWG9fg==" />
+              <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
+                aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with>
+                <svg class="octicon octicon-pencil" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 011.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
+              </button>
+</form>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/mirceast/cnn-dog-breed-classifier/delete/master/imagenet_class_index.json" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="Z6Uu7VIDFyLCCjo47RNEw9t5IRzN8KGRpFoRBCsc4mvKSV+rSKPUbU0RVV+EJk/n9YdlpyIWWOUlgHCAiMXy5g==" />
+            <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
+              aria-label="Fork this project and delete the file" data-disable-with>
+              <svg class="octicon octicon-trashcan" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
+            </button>
+</form>    </div>
+  </div>
+</div>
+
+
+
+
+      
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-json ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="LC1" class="blob-code blob-code-inner js-file-line">{&quot;0&quot;: [&quot;n01440764&quot;, &quot;tench&quot;], &quot;1&quot;: [&quot;n01443537&quot;, &quot;goldfish&quot;], &quot;2&quot;: [&quot;n01484850&quot;, &quot;great_white_shark&quot;], &quot;3&quot;: [&quot;n01491361&quot;, &quot;tiger_shark&quot;], &quot;4&quot;: [&quot;n01494475&quot;, &quot;hammerhead&quot;], &quot;5&quot;: [&quot;n01496331&quot;, &quot;electric_ray&quot;], &quot;6&quot;: [&quot;n01498041&quot;, &quot;stingray&quot;], &quot;7&quot;: [&quot;n01514668&quot;, &quot;cock&quot;], &quot;8&quot;: [&quot;n01514859&quot;, &quot;hen&quot;], &quot;9&quot;: [&quot;n01518878&quot;, &quot;ostrich&quot;], &quot;10&quot;: [&quot;n01530575&quot;, &quot;brambling&quot;], &quot;11&quot;: [&quot;n01531178&quot;, &quot;goldfinch&quot;], &quot;12&quot;: [&quot;n01532829&quot;, &quot;house_finch&quot;], &quot;13&quot;: [&quot;n01534433&quot;, &quot;junco&quot;], &quot;14&quot;: [&quot;n01537544&quot;, &quot;indigo_bunting&quot;], &quot;15&quot;: [&quot;n01558993&quot;, &quot;robin&quot;], &quot;16&quot;: [&quot;n01560419&quot;, &quot;bulbul&quot;], &quot;17&quot;: [&quot;n01580077&quot;, &quot;jay&quot;], &quot;18&quot;: [&quot;n01582220&quot;, &quot;magpie&quot;], &quot;19&quot;: [&quot;n01592084&quot;, &quot;chickadee&quot;], &quot;20&quot;: [&quot;n01601694&quot;, &quot;water_ouzel&quot;], &quot;21&quot;: [&quot;n01608432&quot;, &quot;kite&quot;], &quot;22&quot;: [&quot;n01614925&quot;, &quot;bald_eagle&quot;], &quot;23&quot;: [&quot;n01616318&quot;, &quot;vulture&quot;], &quot;24&quot;: [&quot;n01622779&quot;, &quot;great_grey_owl&quot;], &quot;25&quot;: [&quot;n01629819&quot;, &quot;European_fire_salamander&quot;], &quot;26&quot;: [&quot;n01630670&quot;, &quot;common_newt&quot;], &quot;27&quot;: [&quot;n01631663&quot;, &quot;eft&quot;], &quot;28&quot;: [&quot;n01632458&quot;, &quot;spotted_salamander&quot;], &quot;29&quot;: [&quot;n01632777&quot;, &quot;axolotl&quot;], &quot;30&quot;: [&quot;n01641577&quot;, &quot;bullfrog&quot;], &quot;31&quot;: [&quot;n01644373&quot;, &quot;tree_frog&quot;], &quot;32&quot;: [&quot;n01644900&quot;, &quot;tailed_frog&quot;], &quot;33&quot;: [&quot;n01664065&quot;, &quot;loggerhead&quot;], &quot;34&quot;: [&quot;n01665541&quot;, &quot;leatherback_turtle&quot;], &quot;35&quot;: [&quot;n01667114&quot;, &quot;mud_turtle&quot;], &quot;36&quot;: [&quot;n01667778&quot;, &quot;terrapin&quot;], &quot;37&quot;: [&quot;n01669191&quot;, &quot;box_turtle&quot;], &quot;38&quot;: [&quot;n01675722&quot;, &quot;banded_gecko&quot;], &quot;39&quot;: [&quot;n01677366&quot;, &quot;common_iguana&quot;], &quot;40&quot;: [&quot;n01682714&quot;, &quot;American_chameleon&quot;], &quot;41&quot;: [&quot;n01685808&quot;, &quot;whiptail&quot;], &quot;42&quot;: [&quot;n01687978&quot;, &quot;agama&quot;], &quot;43&quot;: [&quot;n01688243&quot;, &quot;frilled_lizard&quot;], &quot;44&quot;: [&quot;n01689811&quot;, &quot;alligator_lizard&quot;], &quot;45&quot;: [&quot;n01692333&quot;, &quot;Gila_monster&quot;], &quot;46&quot;: [&quot;n01693334&quot;, &quot;green_lizard&quot;], &quot;47&quot;: [&quot;n01694178&quot;, &quot;African_chameleon&quot;], &quot;48&quot;: [&quot;n01695060&quot;, &quot;Komodo_dragon&quot;], &quot;49&quot;: [&quot;n01697457&quot;, &quot;African_crocodile&quot;], &quot;50&quot;: [&quot;n01698640&quot;, &quot;American_alligator&quot;], &quot;51&quot;: [&quot;n01704323&quot;, &quot;triceratops&quot;], &quot;52&quot;: [&quot;n01728572&quot;, &quot;thunder_snake&quot;], &quot;53&quot;: [&quot;n01728920&quot;, &quot;ringneck_snake&quot;], &quot;54&quot;: [&quot;n01729322&quot;, &quot;hognose_snake&quot;], &quot;55&quot;: [&quot;n01729977&quot;, &quot;green_snake&quot;], &quot;56&quot;: [&quot;n01734418&quot;, &quot;king_snake&quot;], &quot;57&quot;: [&quot;n01735189&quot;, &quot;garter_snake&quot;], &quot;58&quot;: [&quot;n01737021&quot;, &quot;water_snake&quot;], &quot;59&quot;: [&quot;n01739381&quot;, &quot;vine_snake&quot;], &quot;60&quot;: [&quot;n01740131&quot;, &quot;night_snake&quot;], &quot;61&quot;: [&quot;n01742172&quot;, &quot;boa_constrictor&quot;], &quot;62&quot;: [&quot;n01744401&quot;, &quot;rock_python&quot;], &quot;63&quot;: [&quot;n01748264&quot;, &quot;Indian_cobra&quot;], &quot;64&quot;: [&quot;n01749939&quot;, &quot;green_mamba&quot;], &quot;65&quot;: [&quot;n01751748&quot;, &quot;sea_snake&quot;], &quot;66&quot;: [&quot;n01753488&quot;, &quot;horned_viper&quot;], &quot;67&quot;: [&quot;n01755581&quot;, &quot;diamondback&quot;], &quot;68&quot;: [&quot;n01756291&quot;, &quot;sidewinder&quot;], &quot;69&quot;: [&quot;n01768244&quot;, &quot;trilobite&quot;], &quot;70&quot;: [&quot;n01770081&quot;, &quot;harvestman&quot;], &quot;71&quot;: [&quot;n01770393&quot;, &quot;scorpion&quot;], &quot;72&quot;: [&quot;n01773157&quot;, &quot;black_and_gold_garden_spider&quot;], &quot;73&quot;: [&quot;n01773549&quot;, &quot;barn_spider&quot;], &quot;74&quot;: [&quot;n01773797&quot;, &quot;garden_spider&quot;], &quot;75&quot;: [&quot;n01774384&quot;, &quot;black_widow&quot;], &quot;76&quot;: [&quot;n01774750&quot;, &quot;tarantula&quot;], &quot;77&quot;: [&quot;n01775062&quot;, &quot;wolf_spider&quot;], &quot;78&quot;: [&quot;n01776313&quot;, &quot;tick&quot;], &quot;79&quot;: [&quot;n01784675&quot;, &quot;centipede&quot;], &quot;80&quot;: [&quot;n01795545&quot;, &quot;black_grouse&quot;], &quot;81&quot;: [&quot;n01796340&quot;, &quot;ptarmigan&quot;], &quot;82&quot;: [&quot;n01797886&quot;, &quot;ruffed_grouse&quot;], &quot;83&quot;: [&quot;n01798484&quot;, &quot;prairie_chicken&quot;], &quot;84&quot;: [&quot;n01806143&quot;, &quot;peacock&quot;], &quot;85&quot;: [&quot;n01806567&quot;, &quot;quail&quot;], &quot;86&quot;: [&quot;n01807496&quot;, &quot;partridge&quot;], &quot;87&quot;: [&quot;n01817953&quot;, &quot;African_grey&quot;], &quot;88&quot;: [&quot;n01818515&quot;, &quot;macaw&quot;], &quot;89&quot;: [&quot;n01819313&quot;, &quot;sulphur-crested_cockatoo&quot;], &quot;90&quot;: [&quot;n01820546&quot;, &quot;lorikeet&quot;], &quot;91&quot;: [&quot;n01824575&quot;, &quot;coucal&quot;], &quot;92&quot;: [&quot;n01828970&quot;, &quot;bee_eater&quot;], &quot;93&quot;: [&quot;n01829413&quot;, &quot;hornbill&quot;], &quot;94&quot;: [&quot;n01833805&quot;, &quot;hummingbird&quot;], &quot;95&quot;: [&quot;n01843065&quot;, &quot;jacamar&quot;], &quot;96&quot;: [&quot;n01843383&quot;, &quot;toucan&quot;], &quot;97&quot;: [&quot;n01847000&quot;, &quot;drake&quot;], &quot;98&quot;: [&quot;n01855032&quot;, &quot;red-breasted_merganser&quot;], &quot;99&quot;: [&quot;n01855672&quot;, &quot;goose&quot;], &quot;100&quot;: [&quot;n01860187&quot;, &quot;black_swan&quot;], &quot;101&quot;: [&quot;n01871265&quot;, &quot;tusker&quot;], &quot;102&quot;: [&quot;n01872401&quot;, &quot;echidna&quot;], &quot;103&quot;: [&quot;n01873310&quot;, &quot;platypus&quot;], &quot;104&quot;: [&quot;n01877812&quot;, &quot;wallaby&quot;], &quot;105&quot;: [&quot;n01882714&quot;, &quot;koala&quot;], &quot;106&quot;: [&quot;n01883070&quot;, &quot;wombat&quot;], &quot;107&quot;: [&quot;n01910747&quot;, &quot;jellyfish&quot;], &quot;108&quot;: [&quot;n01914609&quot;, &quot;sea_anemone&quot;], &quot;109&quot;: [&quot;n01917289&quot;, &quot;brain_coral&quot;], &quot;110&quot;: [&quot;n01924916&quot;, &quot;flatworm&quot;], &quot;111&quot;: [&quot;n01930112&quot;, &quot;nematode&quot;], &quot;112&quot;: [&quot;n01943899&quot;, &quot;conch&quot;], &quot;113&quot;: [&quot;n01944390&quot;, &quot;snail&quot;], &quot;114&quot;: [&quot;n01945685&quot;, &quot;slug&quot;], &quot;115&quot;: [&quot;n01950731&quot;, &quot;sea_slug&quot;], &quot;116&quot;: [&quot;n01955084&quot;, &quot;chiton&quot;], &quot;117&quot;: [&quot;n01968897&quot;, &quot;chambered_nautilus&quot;], &quot;118&quot;: [&quot;n01978287&quot;, &quot;Dungeness_crab&quot;], &quot;119&quot;: [&quot;n01978455&quot;, &quot;rock_crab&quot;], &quot;120&quot;: [&quot;n01980166&quot;, &quot;fiddler_crab&quot;], &quot;121&quot;: [&quot;n01981276&quot;, &quot;king_crab&quot;], &quot;122&quot;: [&quot;n01983481&quot;, &quot;American_lobster&quot;], &quot;123&quot;: [&quot;n01984695&quot;, &quot;spiny_lobster&quot;], &quot;124&quot;: [&quot;n01985128&quot;, &quot;crayfish&quot;], &quot;125&quot;: [&quot;n01986214&quot;, &quot;hermit_crab&quot;], &quot;126&quot;: [&quot;n01990800&quot;, &quot;isopod&quot;], &quot;127&quot;: [&quot;n02002556&quot;, &quot;white_stork&quot;], &quot;128&quot;: [&quot;n02002724&quot;, &quot;black_stork&quot;], &quot;129&quot;: [&quot;n02006656&quot;, &quot;spoonbill&quot;], &quot;130&quot;: [&quot;n02007558&quot;, &quot;flamingo&quot;], &quot;131&quot;: [&quot;n02009229&quot;, &quot;little_blue_heron&quot;], &quot;132&quot;: [&quot;n02009912&quot;, &quot;American_egret&quot;], &quot;133&quot;: [&quot;n02011460&quot;, &quot;bittern&quot;], &quot;134&quot;: [&quot;n02012849&quot;, &quot;crane&quot;], &quot;135&quot;: [&quot;n02013706&quot;, &quot;limpkin&quot;], &quot;136&quot;: [&quot;n02017213&quot;, &quot;European_gallinule&quot;], &quot;137&quot;: [&quot;n02018207&quot;, &quot;American_coot&quot;], &quot;138&quot;: [&quot;n02018795&quot;, &quot;bustard&quot;], &quot;139&quot;: [&quot;n02025239&quot;, &quot;ruddy_turnstone&quot;], &quot;140&quot;: [&quot;n02027492&quot;, &quot;red-backed_sandpiper&quot;], &quot;141&quot;: [&quot;n02028035&quot;, &quot;redshank&quot;], &quot;142&quot;: [&quot;n02033041&quot;, &quot;dowitcher&quot;], &quot;143&quot;: [&quot;n02037110&quot;, &quot;oystercatcher&quot;], &quot;144&quot;: [&quot;n02051845&quot;, &quot;pelican&quot;], &quot;145&quot;: [&quot;n02056570&quot;, &quot;king_penguin&quot;], &quot;146&quot;: [&quot;n02058221&quot;, &quot;albatross&quot;], &quot;147&quot;: [&quot;n02066245&quot;, &quot;grey_whale&quot;], &quot;148&quot;: [&quot;n02071294&quot;, &quot;killer_whale&quot;], &quot;149&quot;: [&quot;n02074367&quot;, &quot;dugong&quot;], &quot;150&quot;: [&quot;n02077923&quot;, &quot;sea_lion&quot;], &quot;151&quot;: [&quot;n02085620&quot;, &quot;Chihuahua&quot;], &quot;152&quot;: [&quot;n02085782&quot;, &quot;Japanese_spaniel&quot;], &quot;153&quot;: [&quot;n02085936&quot;, &quot;Maltese_dog&quot;], &quot;154&quot;: [&quot;n02086079&quot;, &quot;Pekinese&quot;], &quot;155&quot;: [&quot;n02086240&quot;, &quot;Shih-Tzu&quot;], &quot;156&quot;: [&quot;n02086646&quot;, &quot;Blenheim_spaniel&quot;], &quot;157&quot;: [&quot;n02086910&quot;, &quot;papillon&quot;], &quot;158&quot;: [&quot;n02087046&quot;, &quot;toy_terrier&quot;], &quot;159&quot;: [&quot;n02087394&quot;, &quot;Rhodesian_ridgeback&quot;], &quot;160&quot;: [&quot;n02088094&quot;, &quot;Afghan_hound&quot;], &quot;161&quot;: [&quot;n02088238&quot;, &quot;basset&quot;], &quot;162&quot;: [&quot;n02088364&quot;, &quot;beagle&quot;], &quot;163&quot;: [&quot;n02088466&quot;, &quot;bloodhound&quot;], &quot;164&quot;: [&quot;n02088632&quot;, &quot;bluetick&quot;], &quot;165&quot;: [&quot;n02089078&quot;, &quot;black-and-tan_coonhound&quot;], &quot;166&quot;: [&quot;n02089867&quot;, &quot;Walker_hound&quot;], &quot;167&quot;: [&quot;n02089973&quot;, &quot;English_foxhound&quot;], &quot;168&quot;: [&quot;n02090379&quot;, &quot;redbone&quot;], &quot;169&quot;: [&quot;n02090622&quot;, &quot;borzoi&quot;], &quot;170&quot;: [&quot;n02090721&quot;, &quot;Irish_wolfhound&quot;], &quot;171&quot;: [&quot;n02091032&quot;, &quot;Italian_greyhound&quot;], &quot;172&quot;: [&quot;n02091134&quot;, &quot;whippet&quot;], &quot;173&quot;: [&quot;n02091244&quot;, &quot;Ibizan_hound&quot;], &quot;174&quot;: [&quot;n02091467&quot;, &quot;Norwegian_elkhound&quot;], &quot;175&quot;: [&quot;n02091635&quot;, &quot;otterhound&quot;], &quot;176&quot;: [&quot;n02091831&quot;, &quot;Saluki&quot;], &quot;177&quot;: [&quot;n02092002&quot;, &quot;Scottish_deerhound&quot;], &quot;178&quot;: [&quot;n02092339&quot;, &quot;Weimaraner&quot;], &quot;179&quot;: [&quot;n02093256&quot;, &quot;Staffordshire_bullterrier&quot;], &quot;180&quot;: [&quot;n02093428&quot;, &quot;American_Staffordshire_terrier&quot;], &quot;181&quot;: [&quot;n02093647&quot;, &quot;Bedlington_terrier&quot;], &quot;182&quot;: [&quot;n02093754&quot;, &quot;Border_terrier&quot;], &quot;183&quot;: [&quot;n02093859&quot;, &quot;Kerry_blue_terrier&quot;], &quot;184&quot;: [&quot;n02093991&quot;, &quot;Irish_terrier&quot;], &quot;185&quot;: [&quot;n02094114&quot;, &quot;Norfolk_terrier&quot;], &quot;186&quot;: [&quot;n02094258&quot;, &quot;Norwich_terrier&quot;], &quot;187&quot;: [&quot;n02094433&quot;, &quot;Yorkshire_terrier&quot;], &quot;188&quot;: [&quot;n02095314&quot;, &quot;wire-haired_fox_terrier&quot;], &quot;189&quot;: [&quot;n02095570&quot;, &quot;Lakeland_terrier&quot;], &quot;190&quot;: [&quot;n02095889&quot;, &quot;Sealyham_terrier&quot;], &quot;191&quot;: [&quot;n02096051&quot;, &quot;Airedale&quot;], &quot;192&quot;: [&quot;n02096177&quot;, &quot;cairn&quot;], &quot;193&quot;: [&quot;n02096294&quot;, &quot;Australian_terrier&quot;], &quot;194&quot;: [&quot;n02096437&quot;, &quot;Dandie_Dinmont&quot;], &quot;195&quot;: [&quot;n02096585&quot;, &quot;Boston_bull&quot;], &quot;196&quot;: [&quot;n02097047&quot;, &quot;miniature_schnauzer&quot;], &quot;197&quot;: [&quot;n02097130&quot;, &quot;giant_schnauzer&quot;], &quot;198&quot;: [&quot;n02097209&quot;, &quot;standard_schnauzer&quot;], &quot;199&quot;: [&quot;n02097298&quot;, &quot;Scotch_terrier&quot;], &quot;200&quot;: [&quot;n02097474&quot;, &quot;Tibetan_terrier&quot;], &quot;201&quot;: [&quot;n02097658&quot;, &quot;silky_terrier&quot;], &quot;202&quot;: [&quot;n02098105&quot;, &quot;soft-coated_wheaten_terrier&quot;], &quot;203&quot;: [&quot;n02098286&quot;, &quot;West_Highland_white_terrier&quot;], &quot;204&quot;: [&quot;n02098413&quot;, &quot;Lhasa&quot;], &quot;205&quot;: [&quot;n02099267&quot;, &quot;flat-coated_retriever&quot;], &quot;206&quot;: [&quot;n02099429&quot;, &quot;curly-coated_retriever&quot;], &quot;207&quot;: [&quot;n02099601&quot;, &quot;golden_retriever&quot;], &quot;208&quot;: [&quot;n02099712&quot;, &quot;Labrador_retriever&quot;], &quot;209&quot;: [&quot;n02099849&quot;, &quot;Chesapeake_Bay_retriever&quot;], &quot;210&quot;: [&quot;n02100236&quot;, &quot;German_short-haired_pointer&quot;], &quot;211&quot;: [&quot;n02100583&quot;, &quot;vizsla&quot;], &quot;212&quot;: [&quot;n02100735&quot;, &quot;English_setter&quot;], &quot;213&quot;: [&quot;n02100877&quot;, &quot;Irish_setter&quot;], &quot;214&quot;: [&quot;n02101006&quot;, &quot;Gordon_setter&quot;], &quot;215&quot;: [&quot;n02101388&quot;, &quot;Brittany_spaniel&quot;], &quot;216&quot;: [&quot;n02101556&quot;, &quot;clumber&quot;], &quot;217&quot;: [&quot;n02102040&quot;, &quot;English_springer&quot;], &quot;218&quot;: [&quot;n02102177&quot;, &quot;Welsh_springer_spaniel&quot;], &quot;219&quot;: [&quot;n02102318&quot;, &quot;cocker_spaniel&quot;], &quot;220&quot;: [&quot;n02102480&quot;, &quot;Sussex_spaniel&quot;], &quot;221&quot;: [&quot;n02102973&quot;, &quot;Irish_water_spaniel&quot;], &quot;222&quot;: [&quot;n02104029&quot;, &quot;kuvasz&quot;], &quot;223&quot;: [&quot;n02104365&quot;, &quot;schipperke&quot;], &quot;224&quot;: [&quot;n02105056&quot;, &quot;groenendael&quot;], &quot;225&quot;: [&quot;n02105162&quot;, &quot;malinois&quot;], &quot;226&quot;: [&quot;n02105251&quot;, &quot;briard&quot;], &quot;227&quot;: [&quot;n02105412&quot;, &quot;kelpie&quot;], &quot;228&quot;: [&quot;n02105505&quot;, &quot;komondor&quot;], &quot;229&quot;: [&quot;n02105641&quot;, &quot;Old_English_sheepdog&quot;], &quot;230&quot;: [&quot;n02105855&quot;, &quot;Shetland_sheepdog&quot;], &quot;231&quot;: [&quot;n02106030&quot;, &quot;collie&quot;], &quot;232&quot;: [&quot;n02106166&quot;, &quot;Border_collie&quot;], &quot;233&quot;: [&quot;n02106382&quot;, &quot;Bouvier_des_Flandres&quot;], &quot;234&quot;: [&quot;n02106550&quot;, &quot;Rottweiler&quot;], &quot;235&quot;: [&quot;n02106662&quot;, &quot;German_shepherd&quot;], &quot;236&quot;: [&quot;n02107142&quot;, &quot;Doberman&quot;], &quot;237&quot;: [&quot;n02107312&quot;, &quot;miniature_pinscher&quot;], &quot;238&quot;: [&quot;n02107574&quot;, &quot;Greater_Swiss_Mountain_dog&quot;], &quot;239&quot;: [&quot;n02107683&quot;, &quot;Bernese_mountain_dog&quot;], &quot;240&quot;: [&quot;n02107908&quot;, &quot;Appenzeller&quot;], &quot;241&quot;: [&quot;n02108000&quot;, &quot;EntleBucher&quot;], &quot;242&quot;: [&quot;n02108089&quot;, &quot;boxer&quot;], &quot;243&quot;: [&quot;n02108422&quot;, &quot;bull_mastiff&quot;], &quot;244&quot;: [&quot;n02108551&quot;, &quot;Tibetan_mastiff&quot;], &quot;245&quot;: [&quot;n02108915&quot;, &quot;French_bulldog&quot;], &quot;246&quot;: [&quot;n02109047&quot;, &quot;Great_Dane&quot;], &quot;247&quot;: [&quot;n02109525&quot;, &quot;Saint_Bernard&quot;], &quot;248&quot;: [&quot;n02109961&quot;, &quot;Eskimo_dog&quot;], &quot;249&quot;: [&quot;n02110063&quot;, &quot;malamute&quot;], &quot;250&quot;: [&quot;n02110185&quot;, &quot;Siberian_husky&quot;], &quot;251&quot;: [&quot;n02110341&quot;, &quot;dalmatian&quot;], &quot;252&quot;: [&quot;n02110627&quot;, &quot;affenpinscher&quot;], &quot;253&quot;: [&quot;n02110806&quot;, &quot;basenji&quot;], &quot;254&quot;: [&quot;n02110958&quot;, &quot;pug&quot;], &quot;255&quot;: [&quot;n02111129&quot;, &quot;Leonberg&quot;], &quot;256&quot;: [&quot;n02111277&quot;, &quot;Newfoundland&quot;], &quot;257&quot;: [&quot;n02111500&quot;, &quot;Great_Pyrenees&quot;], &quot;258&quot;: [&quot;n02111889&quot;, &quot;Samoyed&quot;], &quot;259&quot;: [&quot;n02112018&quot;, &quot;Pomeranian&quot;], &quot;260&quot;: [&quot;n02112137&quot;, &quot;chow&quot;], &quot;261&quot;: [&quot;n02112350&quot;, &quot;keeshond&quot;], &quot;262&quot;: [&quot;n02112706&quot;, &quot;Brabancon_griffon&quot;], &quot;263&quot;: [&quot;n02113023&quot;, &quot;Pembroke&quot;], &quot;264&quot;: [&quot;n02113186&quot;, &quot;Cardigan&quot;], &quot;265&quot;: [&quot;n02113624&quot;, &quot;toy_poodle&quot;], &quot;266&quot;: [&quot;n02113712&quot;, &quot;miniature_poodle&quot;], &quot;267&quot;: [&quot;n02113799&quot;, &quot;standard_poodle&quot;], &quot;268&quot;: [&quot;n02113978&quot;, &quot;Mexican_hairless&quot;], &quot;269&quot;: [&quot;n02114367&quot;, &quot;timber_wolf&quot;], &quot;270&quot;: [&quot;n02114548&quot;, &quot;white_wolf&quot;], &quot;271&quot;: [&quot;n02114712&quot;, &quot;red_wolf&quot;], &quot;272&quot;: [&quot;n02114855&quot;, &quot;coyote&quot;], &quot;273&quot;: [&quot;n02115641&quot;, &quot;dingo&quot;], &quot;274&quot;: [&quot;n02115913&quot;, &quot;dhole&quot;], &quot;275&quot;: [&quot;n02116738&quot;, &quot;African_hunting_dog&quot;], &quot;276&quot;: [&quot;n02117135&quot;, &quot;hyena&quot;], &quot;277&quot;: [&quot;n02119022&quot;, &quot;red_fox&quot;], &quot;278&quot;: [&quot;n02119789&quot;, &quot;kit_fox&quot;], &quot;279&quot;: [&quot;n02120079&quot;, &quot;Arctic_fox&quot;], &quot;280&quot;: [&quot;n02120505&quot;, &quot;grey_fox&quot;], &quot;281&quot;: [&quot;n02123045&quot;, &quot;tabby&quot;], &quot;282&quot;: [&quot;n02123159&quot;, &quot;tiger_cat&quot;], &quot;283&quot;: [&quot;n02123394&quot;, &quot;Persian_cat&quot;], &quot;284&quot;: [&quot;n02123597&quot;, &quot;Siamese_cat&quot;], &quot;285&quot;: [&quot;n02124075&quot;, &quot;Egyptian_cat&quot;], &quot;286&quot;: [&quot;n02125311&quot;, &quot;cougar&quot;], &quot;287&quot;: [&quot;n02127052&quot;, &quot;lynx&quot;], &quot;288&quot;: [&quot;n02128385&quot;, &quot;leopard&quot;], &quot;289&quot;: [&quot;n02128757&quot;, &quot;snow_leopard&quot;], &quot;290&quot;: [&quot;n02128925&quot;, &quot;jaguar&quot;], &quot;291&quot;: [&quot;n02129165&quot;, &quot;lion&quot;], &quot;292&quot;: [&quot;n02129604&quot;, &quot;tiger&quot;], &quot;293&quot;: [&quot;n02130308&quot;, &quot;cheetah&quot;], &quot;294&quot;: [&quot;n02132136&quot;, &quot;brown_bear&quot;], &quot;295&quot;: [&quot;n02133161&quot;, &quot;American_black_bear&quot;], &quot;296&quot;: [&quot;n02134084&quot;, &quot;ice_bear&quot;], &quot;297&quot;: [&quot;n02134418&quot;, &quot;sloth_bear&quot;], &quot;298&quot;: [&quot;n02137549&quot;, &quot;mongoose&quot;], &quot;299&quot;: [&quot;n02138441&quot;, &quot;meerkat&quot;], &quot;300&quot;: [&quot;n02165105&quot;, &quot;tiger_beetle&quot;], &quot;301&quot;: [&quot;n02165456&quot;, &quot;ladybug&quot;], &quot;302&quot;: [&quot;n02167151&quot;, &quot;ground_beetle&quot;], &quot;303&quot;: [&quot;n02168699&quot;, &quot;long-horned_beetle&quot;], &quot;304&quot;: [&quot;n02169497&quot;, &quot;leaf_beetle&quot;], &quot;305&quot;: [&quot;n02172182&quot;, &quot;dung_beetle&quot;], &quot;306&quot;: [&quot;n02174001&quot;, &quot;rhinoceros_beetle&quot;], &quot;307&quot;: [&quot;n02177972&quot;, &quot;weevil&quot;], &quot;308&quot;: [&quot;n02190166&quot;, &quot;fly&quot;], &quot;309&quot;: [&quot;n02206856&quot;, &quot;bee&quot;], &quot;310&quot;: [&quot;n02219486&quot;, &quot;ant&quot;], &quot;311&quot;: [&quot;n02226429&quot;, &quot;grasshopper&quot;], &quot;312&quot;: [&quot;n02229544&quot;, &quot;cricket&quot;], &quot;313&quot;: [&quot;n02231487&quot;, &quot;walking_stick&quot;], &quot;314&quot;: [&quot;n02233338&quot;, &quot;cockroach&quot;], &quot;315&quot;: [&quot;n02236044&quot;, &quot;mantis&quot;], &quot;316&quot;: [&quot;n02256656&quot;, &quot;cicada&quot;], &quot;317&quot;: [&quot;n02259212&quot;, &quot;leafhopper&quot;], &quot;318&quot;: [&quot;n02264363&quot;, &quot;lacewing&quot;], &quot;319&quot;: [&quot;n02268443&quot;, &quot;dragonfly&quot;], &quot;320&quot;: [&quot;n02268853&quot;, &quot;damselfly&quot;], &quot;321&quot;: [&quot;n02276258&quot;, &quot;admiral&quot;], &quot;322&quot;: [&quot;n02277742&quot;, &quot;ringlet&quot;], &quot;323&quot;: [&quot;n02279972&quot;, &quot;monarch&quot;], &quot;324&quot;: [&quot;n02280649&quot;, &quot;cabbage_butterfly&quot;], &quot;325&quot;: [&quot;n02281406&quot;, &quot;sulphur_butterfly&quot;], &quot;326&quot;: [&quot;n02281787&quot;, &quot;lycaenid&quot;], &quot;327&quot;: [&quot;n02317335&quot;, &quot;starfish&quot;], &quot;328&quot;: [&quot;n02319095&quot;, &quot;sea_urchin&quot;], &quot;329&quot;: [&quot;n02321529&quot;, &quot;sea_cucumber&quot;], &quot;330&quot;: [&quot;n02325366&quot;, &quot;wood_rabbit&quot;], &quot;331&quot;: [&quot;n02326432&quot;, &quot;hare&quot;], &quot;332&quot;: [&quot;n02328150&quot;, &quot;Angora&quot;], &quot;333&quot;: [&quot;n02342885&quot;, &quot;hamster&quot;], &quot;334&quot;: [&quot;n02346627&quot;, &quot;porcupine&quot;], &quot;335&quot;: [&quot;n02356798&quot;, &quot;fox_squirrel&quot;], &quot;336&quot;: [&quot;n02361337&quot;, &quot;marmot&quot;], &quot;337&quot;: [&quot;n02363005&quot;, &quot;beaver&quot;], &quot;338&quot;: [&quot;n02364673&quot;, &quot;guinea_pig&quot;], &quot;339&quot;: [&quot;n02389026&quot;, &quot;sorrel&quot;], &quot;340&quot;: [&quot;n02391049&quot;, &quot;zebra&quot;], &quot;341&quot;: [&quot;n02395406&quot;, &quot;hog&quot;], &quot;342&quot;: [&quot;n02396427&quot;, &quot;wild_boar&quot;], &quot;343&quot;: [&quot;n02397096&quot;, &quot;warthog&quot;], &quot;344&quot;: [&quot;n02398521&quot;, &quot;hippopotamus&quot;], &quot;345&quot;: [&quot;n02403003&quot;, &quot;ox&quot;], &quot;346&quot;: [&quot;n02408429&quot;, &quot;water_buffalo&quot;], &quot;347&quot;: [&quot;n02410509&quot;, &quot;bison&quot;], &quot;348&quot;: [&quot;n02412080&quot;, &quot;ram&quot;], &quot;349&quot;: [&quot;n02415577&quot;, &quot;bighorn&quot;], &quot;350&quot;: [&quot;n02417914&quot;, &quot;ibex&quot;], &quot;351&quot;: [&quot;n02422106&quot;, &quot;hartebeest&quot;], &quot;352&quot;: [&quot;n02422699&quot;, &quot;impala&quot;], &quot;353&quot;: [&quot;n02423022&quot;, &quot;gazelle&quot;], &quot;354&quot;: [&quot;n02437312&quot;, &quot;Arabian_camel&quot;], &quot;355&quot;: [&quot;n02437616&quot;, &quot;llama&quot;], &quot;356&quot;: [&quot;n02441942&quot;, &quot;weasel&quot;], &quot;357&quot;: [&quot;n02442845&quot;, &quot;mink&quot;], &quot;358&quot;: [&quot;n02443114&quot;, &quot;polecat&quot;], &quot;359&quot;: [&quot;n02443484&quot;, &quot;black-footed_ferret&quot;], &quot;360&quot;: [&quot;n02444819&quot;, &quot;otter&quot;], &quot;361&quot;: [&quot;n02445715&quot;, &quot;skunk&quot;], &quot;362&quot;: [&quot;n02447366&quot;, &quot;badger&quot;], &quot;363&quot;: [&quot;n02454379&quot;, &quot;armadillo&quot;], &quot;364&quot;: [&quot;n02457408&quot;, &quot;three-toed_sloth&quot;], &quot;365&quot;: [&quot;n02480495&quot;, &quot;orangutan&quot;], &quot;366&quot;: [&quot;n02480855&quot;, &quot;gorilla&quot;], &quot;367&quot;: [&quot;n02481823&quot;, &quot;chimpanzee&quot;], &quot;368&quot;: [&quot;n02483362&quot;, &quot;gibbon&quot;], &quot;369&quot;: [&quot;n02483708&quot;, &quot;siamang&quot;], &quot;370&quot;: [&quot;n02484975&quot;, &quot;guenon&quot;], &quot;371&quot;: [&quot;n02486261&quot;, &quot;patas&quot;], &quot;372&quot;: [&quot;n02486410&quot;, &quot;baboon&quot;], &quot;373&quot;: [&quot;n02487347&quot;, &quot;macaque&quot;], &quot;374&quot;: [&quot;n02488291&quot;, &quot;langur&quot;], &quot;375&quot;: [&quot;n02488702&quot;, &quot;colobus&quot;], &quot;376&quot;: [&quot;n02489166&quot;, &quot;proboscis_monkey&quot;], &quot;377&quot;: [&quot;n02490219&quot;, &quot;marmoset&quot;], &quot;378&quot;: [&quot;n02492035&quot;, &quot;capuchin&quot;], &quot;379&quot;: [&quot;n02492660&quot;, &quot;howler_monkey&quot;], &quot;380&quot;: [&quot;n02493509&quot;, &quot;titi&quot;], &quot;381&quot;: [&quot;n02493793&quot;, &quot;spider_monkey&quot;], &quot;382&quot;: [&quot;n02494079&quot;, &quot;squirrel_monkey&quot;], &quot;383&quot;: [&quot;n02497673&quot;, &quot;Madagascar_cat&quot;], &quot;384&quot;: [&quot;n02500267&quot;, &quot;indri&quot;], &quot;385&quot;: [&quot;n02504013&quot;, &quot;Indian_elephant&quot;], &quot;386&quot;: [&quot;n02504458&quot;, &quot;African_elephant&quot;], &quot;387&quot;: [&quot;n02509815&quot;, &quot;lesser_panda&quot;], &quot;388&quot;: [&quot;n02510455&quot;, &quot;giant_panda&quot;], &quot;389&quot;: [&quot;n02514041&quot;, &quot;barracouta&quot;], &quot;390&quot;: [&quot;n02526121&quot;, &quot;eel&quot;], &quot;391&quot;: [&quot;n02536864&quot;, &quot;coho&quot;], &quot;392&quot;: [&quot;n02606052&quot;, &quot;rock_beauty&quot;], &quot;393&quot;: [&quot;n02607072&quot;, &quot;anemone_fish&quot;], &quot;394&quot;: [&quot;n02640242&quot;, &quot;sturgeon&quot;], &quot;395&quot;: [&quot;n02641379&quot;, &quot;gar&quot;], &quot;396&quot;: [&quot;n02643566&quot;, &quot;lionfish&quot;], &quot;397&quot;: [&quot;n02655020&quot;, &quot;puffer&quot;], &quot;398&quot;: [&quot;n02666196&quot;, &quot;abacus&quot;], &quot;399&quot;: [&quot;n02667093&quot;, &quot;abaya&quot;], &quot;400&quot;: [&quot;n02669723&quot;, &quot;academic_gown&quot;], &quot;401&quot;: [&quot;n02672831&quot;, &quot;accordion&quot;], &quot;402&quot;: [&quot;n02676566&quot;, &quot;acoustic_guitar&quot;], &quot;403&quot;: [&quot;n02687172&quot;, &quot;aircraft_carrier&quot;], &quot;404&quot;: [&quot;n02690373&quot;, &quot;airliner&quot;], &quot;405&quot;: [&quot;n02692877&quot;, &quot;airship&quot;], &quot;406&quot;: [&quot;n02699494&quot;, &quot;altar&quot;], &quot;407&quot;: [&quot;n02701002&quot;, &quot;ambulance&quot;], &quot;408&quot;: [&quot;n02704792&quot;, &quot;amphibian&quot;], &quot;409&quot;: [&quot;n02708093&quot;, &quot;analog_clock&quot;], &quot;410&quot;: [&quot;n02727426&quot;, &quot;apiary&quot;], &quot;411&quot;: [&quot;n02730930&quot;, &quot;apron&quot;], &quot;412&quot;: [&quot;n02747177&quot;, &quot;ashcan&quot;], &quot;413&quot;: [&quot;n02749479&quot;, &quot;assault_rifle&quot;], &quot;414&quot;: [&quot;n02769748&quot;, &quot;backpack&quot;], &quot;415&quot;: [&quot;n02776631&quot;, &quot;bakery&quot;], &quot;416&quot;: [&quot;n02777292&quot;, &quot;balance_beam&quot;], &quot;417&quot;: [&quot;n02782093&quot;, &quot;balloon&quot;], &quot;418&quot;: [&quot;n02783161&quot;, &quot;ballpoint&quot;], &quot;419&quot;: [&quot;n02786058&quot;, &quot;Band_Aid&quot;], &quot;420&quot;: [&quot;n02787622&quot;, &quot;banjo&quot;], &quot;421&quot;: [&quot;n02788148&quot;, &quot;bannister&quot;], &quot;422&quot;: [&quot;n02790996&quot;, &quot;barbell&quot;], &quot;423&quot;: [&quot;n02791124&quot;, &quot;barber_chair&quot;], &quot;424&quot;: [&quot;n02791270&quot;, &quot;barbershop&quot;], &quot;425&quot;: [&quot;n02793495&quot;, &quot;barn&quot;], &quot;426&quot;: [&quot;n02794156&quot;, &quot;barometer&quot;], &quot;427&quot;: [&quot;n02795169&quot;, &quot;barrel&quot;], &quot;428&quot;: [&quot;n02797295&quot;, &quot;barrow&quot;], &quot;429&quot;: [&quot;n02799071&quot;, &quot;baseball&quot;], &quot;430&quot;: [&quot;n02802426&quot;, &quot;basketball&quot;], &quot;431&quot;: [&quot;n02804414&quot;, &quot;bassinet&quot;], &quot;432&quot;: [&quot;n02804610&quot;, &quot;bassoon&quot;], &quot;433&quot;: [&quot;n02807133&quot;, &quot;bathing_cap&quot;], &quot;434&quot;: [&quot;n02808304&quot;, &quot;bath_towel&quot;], &quot;435&quot;: [&quot;n02808440&quot;, &quot;bathtub&quot;], &quot;436&quot;: [&quot;n02814533&quot;, &quot;beach_wagon&quot;], &quot;437&quot;: [&quot;n02814860&quot;, &quot;beacon&quot;], &quot;438&quot;: [&quot;n02815834&quot;, &quot;beaker&quot;], &quot;439&quot;: [&quot;n02817516&quot;, &quot;bearskin&quot;], &quot;440&quot;: [&quot;n02823428&quot;, &quot;beer_bottle&quot;], &quot;441&quot;: [&quot;n02823750&quot;, &quot;beer_glass&quot;], &quot;442&quot;: [&quot;n02825657&quot;, &quot;bell_cote&quot;], &quot;443&quot;: [&quot;n02834397&quot;, &quot;bib&quot;], &quot;444&quot;: [&quot;n02835271&quot;, &quot;bicycle-built-for-two&quot;], &quot;445&quot;: [&quot;n02837789&quot;, &quot;bikini&quot;], &quot;446&quot;: [&quot;n02840245&quot;, &quot;binder&quot;], &quot;447&quot;: [&quot;n02841315&quot;, &quot;binoculars&quot;], &quot;448&quot;: [&quot;n02843684&quot;, &quot;birdhouse&quot;], &quot;449&quot;: [&quot;n02859443&quot;, &quot;boathouse&quot;], &quot;450&quot;: [&quot;n02860847&quot;, &quot;bobsled&quot;], &quot;451&quot;: [&quot;n02865351&quot;, &quot;bolo_tie&quot;], &quot;452&quot;: [&quot;n02869837&quot;, &quot;bonnet&quot;], &quot;453&quot;: [&quot;n02870880&quot;, &quot;bookcase&quot;], &quot;454&quot;: [&quot;n02871525&quot;, &quot;bookshop&quot;], &quot;455&quot;: [&quot;n02877765&quot;, &quot;bottlecap&quot;], &quot;456&quot;: [&quot;n02879718&quot;, &quot;bow&quot;], &quot;457&quot;: [&quot;n02883205&quot;, &quot;bow_tie&quot;], &quot;458&quot;: [&quot;n02892201&quot;, &quot;brass&quot;], &quot;459&quot;: [&quot;n02892767&quot;, &quot;brassiere&quot;], &quot;460&quot;: [&quot;n02894605&quot;, &quot;breakwater&quot;], &quot;461&quot;: [&quot;n02895154&quot;, &quot;breastplate&quot;], &quot;462&quot;: [&quot;n02906734&quot;, &quot;broom&quot;], &quot;463&quot;: [&quot;n02909870&quot;, &quot;bucket&quot;], &quot;464&quot;: [&quot;n02910353&quot;, &quot;buckle&quot;], &quot;465&quot;: [&quot;n02916936&quot;, &quot;bulletproof_vest&quot;], &quot;466&quot;: [&quot;n02917067&quot;, &quot;bullet_train&quot;], &quot;467&quot;: [&quot;n02927161&quot;, &quot;butcher_shop&quot;], &quot;468&quot;: [&quot;n02930766&quot;, &quot;cab&quot;], &quot;469&quot;: [&quot;n02939185&quot;, &quot;caldron&quot;], &quot;470&quot;: [&quot;n02948072&quot;, &quot;candle&quot;], &quot;471&quot;: [&quot;n02950826&quot;, &quot;cannon&quot;], &quot;472&quot;: [&quot;n02951358&quot;, &quot;canoe&quot;], &quot;473&quot;: [&quot;n02951585&quot;, &quot;can_opener&quot;], &quot;474&quot;: [&quot;n02963159&quot;, &quot;cardigan&quot;], &quot;475&quot;: [&quot;n02965783&quot;, &quot;car_mirror&quot;], &quot;476&quot;: [&quot;n02966193&quot;, &quot;carousel&quot;], &quot;477&quot;: [&quot;n02966687&quot;, &quot;carpenter&#39;s_kit&quot;], &quot;478&quot;: [&quot;n02971356&quot;, &quot;carton&quot;], &quot;479&quot;: [&quot;n02974003&quot;, &quot;car_wheel&quot;], &quot;480&quot;: [&quot;n02977058&quot;, &quot;cash_machine&quot;], &quot;481&quot;: [&quot;n02978881&quot;, &quot;cassette&quot;], &quot;482&quot;: [&quot;n02979186&quot;, &quot;cassette_player&quot;], &quot;483&quot;: [&quot;n02980441&quot;, &quot;castle&quot;], &quot;484&quot;: [&quot;n02981792&quot;, &quot;catamaran&quot;], &quot;485&quot;: [&quot;n02988304&quot;, &quot;CD_player&quot;], &quot;486&quot;: [&quot;n02992211&quot;, &quot;cello&quot;], &quot;487&quot;: [&quot;n02992529&quot;, &quot;cellular_telephone&quot;], &quot;488&quot;: [&quot;n02999410&quot;, &quot;chain&quot;], &quot;489&quot;: [&quot;n03000134&quot;, &quot;chainlink_fence&quot;], &quot;490&quot;: [&quot;n03000247&quot;, &quot;chain_mail&quot;], &quot;491&quot;: [&quot;n03000684&quot;, &quot;chain_saw&quot;], &quot;492&quot;: [&quot;n03014705&quot;, &quot;chest&quot;], &quot;493&quot;: [&quot;n03016953&quot;, &quot;chiffonier&quot;], &quot;494&quot;: [&quot;n03017168&quot;, &quot;chime&quot;], &quot;495&quot;: [&quot;n03018349&quot;, &quot;china_cabinet&quot;], &quot;496&quot;: [&quot;n03026506&quot;, &quot;Christmas_stocking&quot;], &quot;497&quot;: [&quot;n03028079&quot;, &quot;church&quot;], &quot;498&quot;: [&quot;n03032252&quot;, &quot;cinema&quot;], &quot;499&quot;: [&quot;n03041632&quot;, &quot;cleaver&quot;], &quot;500&quot;: [&quot;n03042490&quot;, &quot;cliff_dwelling&quot;], &quot;501&quot;: [&quot;n03045698&quot;, &quot;cloak&quot;], &quot;502&quot;: [&quot;n03047690&quot;, &quot;clog&quot;], &quot;503&quot;: [&quot;n03062245&quot;, &quot;cocktail_shaker&quot;], &quot;504&quot;: [&quot;n03063599&quot;, &quot;coffee_mug&quot;], &quot;505&quot;: [&quot;n03063689&quot;, &quot;coffeepot&quot;], &quot;506&quot;: [&quot;n03065424&quot;, &quot;coil&quot;], &quot;507&quot;: [&quot;n03075370&quot;, &quot;combination_lock&quot;], &quot;508&quot;: [&quot;n03085013&quot;, &quot;computer_keyboard&quot;], &quot;509&quot;: [&quot;n03089624&quot;, &quot;confectionery&quot;], &quot;510&quot;: [&quot;n03095699&quot;, &quot;container_ship&quot;], &quot;511&quot;: [&quot;n03100240&quot;, &quot;convertible&quot;], &quot;512&quot;: [&quot;n03109150&quot;, &quot;corkscrew&quot;], &quot;513&quot;: [&quot;n03110669&quot;, &quot;cornet&quot;], &quot;514&quot;: [&quot;n03124043&quot;, &quot;cowboy_boot&quot;], &quot;515&quot;: [&quot;n03124170&quot;, &quot;cowboy_hat&quot;], &quot;516&quot;: [&quot;n03125729&quot;, &quot;cradle&quot;], &quot;517&quot;: [&quot;n03126707&quot;, &quot;crane&quot;], &quot;518&quot;: [&quot;n03127747&quot;, &quot;crash_helmet&quot;], &quot;519&quot;: [&quot;n03127925&quot;, &quot;crate&quot;], &quot;520&quot;: [&quot;n03131574&quot;, &quot;crib&quot;], &quot;521&quot;: [&quot;n03133878&quot;, &quot;Crock_Pot&quot;], &quot;522&quot;: [&quot;n03134739&quot;, &quot;croquet_ball&quot;], &quot;523&quot;: [&quot;n03141823&quot;, &quot;crutch&quot;], &quot;524&quot;: [&quot;n03146219&quot;, &quot;cuirass&quot;], &quot;525&quot;: [&quot;n03160309&quot;, &quot;dam&quot;], &quot;526&quot;: [&quot;n03179701&quot;, &quot;desk&quot;], &quot;527&quot;: [&quot;n03180011&quot;, &quot;desktop_computer&quot;], &quot;528&quot;: [&quot;n03187595&quot;, &quot;dial_telephone&quot;], &quot;529&quot;: [&quot;n03188531&quot;, &quot;diaper&quot;], &quot;530&quot;: [&quot;n03196217&quot;, &quot;digital_clock&quot;], &quot;531&quot;: [&quot;n03197337&quot;, &quot;digital_watch&quot;], &quot;532&quot;: [&quot;n03201208&quot;, &quot;dining_table&quot;], &quot;533&quot;: [&quot;n03207743&quot;, &quot;dishrag&quot;], &quot;534&quot;: [&quot;n03207941&quot;, &quot;dishwasher&quot;], &quot;535&quot;: [&quot;n03208938&quot;, &quot;disk_brake&quot;], &quot;536&quot;: [&quot;n03216828&quot;, &quot;dock&quot;], &quot;537&quot;: [&quot;n03218198&quot;, &quot;dogsled&quot;], &quot;538&quot;: [&quot;n03220513&quot;, &quot;dome&quot;], &quot;539&quot;: [&quot;n03223299&quot;, &quot;doormat&quot;], &quot;540&quot;: [&quot;n03240683&quot;, &quot;drilling_platform&quot;], &quot;541&quot;: [&quot;n03249569&quot;, &quot;drum&quot;], &quot;542&quot;: [&quot;n03250847&quot;, &quot;drumstick&quot;], &quot;543&quot;: [&quot;n03255030&quot;, &quot;dumbbell&quot;], &quot;544&quot;: [&quot;n03259280&quot;, &quot;Dutch_oven&quot;], &quot;545&quot;: [&quot;n03271574&quot;, &quot;electric_fan&quot;], &quot;546&quot;: [&quot;n03272010&quot;, &quot;electric_guitar&quot;], &quot;547&quot;: [&quot;n03272562&quot;, &quot;electric_locomotive&quot;], &quot;548&quot;: [&quot;n03290653&quot;, &quot;entertainment_center&quot;], &quot;549&quot;: [&quot;n03291819&quot;, &quot;envelope&quot;], &quot;550&quot;: [&quot;n03297495&quot;, &quot;espresso_maker&quot;], &quot;551&quot;: [&quot;n03314780&quot;, &quot;face_powder&quot;], &quot;552&quot;: [&quot;n03325584&quot;, &quot;feather_boa&quot;], &quot;553&quot;: [&quot;n03337140&quot;, &quot;file&quot;], &quot;554&quot;: [&quot;n03344393&quot;, &quot;fireboat&quot;], &quot;555&quot;: [&quot;n03345487&quot;, &quot;fire_engine&quot;], &quot;556&quot;: [&quot;n03347037&quot;, &quot;fire_screen&quot;], &quot;557&quot;: [&quot;n03355925&quot;, &quot;flagpole&quot;], &quot;558&quot;: [&quot;n03372029&quot;, &quot;flute&quot;], &quot;559&quot;: [&quot;n03376595&quot;, &quot;folding_chair&quot;], &quot;560&quot;: [&quot;n03379051&quot;, &quot;football_helmet&quot;], &quot;561&quot;: [&quot;n03384352&quot;, &quot;forklift&quot;], &quot;562&quot;: [&quot;n03388043&quot;, &quot;fountain&quot;], &quot;563&quot;: [&quot;n03388183&quot;, &quot;fountain_pen&quot;], &quot;564&quot;: [&quot;n03388549&quot;, &quot;four-poster&quot;], &quot;565&quot;: [&quot;n03393912&quot;, &quot;freight_car&quot;], &quot;566&quot;: [&quot;n03394916&quot;, &quot;French_horn&quot;], &quot;567&quot;: [&quot;n03400231&quot;, &quot;frying_pan&quot;], &quot;568&quot;: [&quot;n03404251&quot;, &quot;fur_coat&quot;], &quot;569&quot;: [&quot;n03417042&quot;, &quot;garbage_truck&quot;], &quot;570&quot;: [&quot;n03424325&quot;, &quot;gasmask&quot;], &quot;571&quot;: [&quot;n03425413&quot;, &quot;gas_pump&quot;], &quot;572&quot;: [&quot;n03443371&quot;, &quot;goblet&quot;], &quot;573&quot;: [&quot;n03444034&quot;, &quot;go-kart&quot;], &quot;574&quot;: [&quot;n03445777&quot;, &quot;golf_ball&quot;], &quot;575&quot;: [&quot;n03445924&quot;, &quot;golfcart&quot;], &quot;576&quot;: [&quot;n03447447&quot;, &quot;gondola&quot;], &quot;577&quot;: [&quot;n03447721&quot;, &quot;gong&quot;], &quot;578&quot;: [&quot;n03450230&quot;, &quot;gown&quot;], &quot;579&quot;: [&quot;n03452741&quot;, &quot;grand_piano&quot;], &quot;580&quot;: [&quot;n03457902&quot;, &quot;greenhouse&quot;], &quot;581&quot;: [&quot;n03459775&quot;, &quot;grille&quot;], &quot;582&quot;: [&quot;n03461385&quot;, &quot;grocery_store&quot;], &quot;583&quot;: [&quot;n03467068&quot;, &quot;guillotine&quot;], &quot;584&quot;: [&quot;n03476684&quot;, &quot;hair_slide&quot;], &quot;585&quot;: [&quot;n03476991&quot;, &quot;hair_spray&quot;], &quot;586&quot;: [&quot;n03478589&quot;, &quot;half_track&quot;], &quot;587&quot;: [&quot;n03481172&quot;, &quot;hammer&quot;], &quot;588&quot;: [&quot;n03482405&quot;, &quot;hamper&quot;], &quot;589&quot;: [&quot;n03483316&quot;, &quot;hand_blower&quot;], &quot;590&quot;: [&quot;n03485407&quot;, &quot;hand-held_computer&quot;], &quot;591&quot;: [&quot;n03485794&quot;, &quot;handkerchief&quot;], &quot;592&quot;: [&quot;n03492542&quot;, &quot;hard_disc&quot;], &quot;593&quot;: [&quot;n03494278&quot;, &quot;harmonica&quot;], &quot;594&quot;: [&quot;n03495258&quot;, &quot;harp&quot;], &quot;595&quot;: [&quot;n03496892&quot;, &quot;harvester&quot;], &quot;596&quot;: [&quot;n03498962&quot;, &quot;hatchet&quot;], &quot;597&quot;: [&quot;n03527444&quot;, &quot;holster&quot;], &quot;598&quot;: [&quot;n03529860&quot;, &quot;home_theater&quot;], &quot;599&quot;: [&quot;n03530642&quot;, &quot;honeycomb&quot;], &quot;600&quot;: [&quot;n03532672&quot;, &quot;hook&quot;], &quot;601&quot;: [&quot;n03534580&quot;, &quot;hoopskirt&quot;], &quot;602&quot;: [&quot;n03535780&quot;, &quot;horizontal_bar&quot;], &quot;603&quot;: [&quot;n03538406&quot;, &quot;horse_cart&quot;], &quot;604&quot;: [&quot;n03544143&quot;, &quot;hourglass&quot;], &quot;605&quot;: [&quot;n03584254&quot;, &quot;iPod&quot;], &quot;606&quot;: [&quot;n03584829&quot;, &quot;iron&quot;], &quot;607&quot;: [&quot;n03590841&quot;, &quot;jack-o&#39;-lantern&quot;], &quot;608&quot;: [&quot;n03594734&quot;, &quot;jean&quot;], &quot;609&quot;: [&quot;n03594945&quot;, &quot;jeep&quot;], &quot;610&quot;: [&quot;n03595614&quot;, &quot;jersey&quot;], &quot;611&quot;: [&quot;n03598930&quot;, &quot;jigsaw_puzzle&quot;], &quot;612&quot;: [&quot;n03599486&quot;, &quot;jinrikisha&quot;], &quot;613&quot;: [&quot;n03602883&quot;, &quot;joystick&quot;], &quot;614&quot;: [&quot;n03617480&quot;, &quot;kimono&quot;], &quot;615&quot;: [&quot;n03623198&quot;, &quot;knee_pad&quot;], &quot;616&quot;: [&quot;n03627232&quot;, &quot;knot&quot;], &quot;617&quot;: [&quot;n03630383&quot;, &quot;lab_coat&quot;], &quot;618&quot;: [&quot;n03633091&quot;, &quot;ladle&quot;], &quot;619&quot;: [&quot;n03637318&quot;, &quot;lampshade&quot;], &quot;620&quot;: [&quot;n03642806&quot;, &quot;laptop&quot;], &quot;621&quot;: [&quot;n03649909&quot;, &quot;lawn_mower&quot;], &quot;622&quot;: [&quot;n03657121&quot;, &quot;lens_cap&quot;], &quot;623&quot;: [&quot;n03658185&quot;, &quot;letter_opener&quot;], &quot;624&quot;: [&quot;n03661043&quot;, &quot;library&quot;], &quot;625&quot;: [&quot;n03662601&quot;, &quot;lifeboat&quot;], &quot;626&quot;: [&quot;n03666591&quot;, &quot;lighter&quot;], &quot;627&quot;: [&quot;n03670208&quot;, &quot;limousine&quot;], &quot;628&quot;: [&quot;n03673027&quot;, &quot;liner&quot;], &quot;629&quot;: [&quot;n03676483&quot;, &quot;lipstick&quot;], &quot;630&quot;: [&quot;n03680355&quot;, &quot;Loafer&quot;], &quot;631&quot;: [&quot;n03690938&quot;, &quot;lotion&quot;], &quot;632&quot;: [&quot;n03691459&quot;, &quot;loudspeaker&quot;], &quot;633&quot;: [&quot;n03692522&quot;, &quot;loupe&quot;], &quot;634&quot;: [&quot;n03697007&quot;, &quot;lumbermill&quot;], &quot;635&quot;: [&quot;n03706229&quot;, &quot;magnetic_compass&quot;], &quot;636&quot;: [&quot;n03709823&quot;, &quot;mailbag&quot;], &quot;637&quot;: [&quot;n03710193&quot;, &quot;mailbox&quot;], &quot;638&quot;: [&quot;n03710637&quot;, &quot;maillot&quot;], &quot;639&quot;: [&quot;n03710721&quot;, &quot;maillot&quot;], &quot;640&quot;: [&quot;n03717622&quot;, &quot;manhole_cover&quot;], &quot;641&quot;: [&quot;n03720891&quot;, &quot;maraca&quot;], &quot;642&quot;: [&quot;n03721384&quot;, &quot;marimba&quot;], &quot;643&quot;: [&quot;n03724870&quot;, &quot;mask&quot;], &quot;644&quot;: [&quot;n03729826&quot;, &quot;matchstick&quot;], &quot;645&quot;: [&quot;n03733131&quot;, &quot;maypole&quot;], &quot;646&quot;: [&quot;n03733281&quot;, &quot;maze&quot;], &quot;647&quot;: [&quot;n03733805&quot;, &quot;measuring_cup&quot;], &quot;648&quot;: [&quot;n03742115&quot;, &quot;medicine_chest&quot;], &quot;649&quot;: [&quot;n03743016&quot;, &quot;megalith&quot;], &quot;650&quot;: [&quot;n03759954&quot;, &quot;microphone&quot;], &quot;651&quot;: [&quot;n03761084&quot;, &quot;microwave&quot;], &quot;652&quot;: [&quot;n03763968&quot;, &quot;military_uniform&quot;], &quot;653&quot;: [&quot;n03764736&quot;, &quot;milk_can&quot;], &quot;654&quot;: [&quot;n03769881&quot;, &quot;minibus&quot;], &quot;655&quot;: [&quot;n03770439&quot;, &quot;miniskirt&quot;], &quot;656&quot;: [&quot;n03770679&quot;, &quot;minivan&quot;], &quot;657&quot;: [&quot;n03773504&quot;, &quot;missile&quot;], &quot;658&quot;: [&quot;n03775071&quot;, &quot;mitten&quot;], &quot;659&quot;: [&quot;n03775546&quot;, &quot;mixing_bowl&quot;], &quot;660&quot;: [&quot;n03776460&quot;, &quot;mobile_home&quot;], &quot;661&quot;: [&quot;n03777568&quot;, &quot;Model_T&quot;], &quot;662&quot;: [&quot;n03777754&quot;, &quot;modem&quot;], &quot;663&quot;: [&quot;n03781244&quot;, &quot;monastery&quot;], &quot;664&quot;: [&quot;n03782006&quot;, &quot;monitor&quot;], &quot;665&quot;: [&quot;n03785016&quot;, &quot;moped&quot;], &quot;666&quot;: [&quot;n03786901&quot;, &quot;mortar&quot;], &quot;667&quot;: [&quot;n03787032&quot;, &quot;mortarboard&quot;], &quot;668&quot;: [&quot;n03788195&quot;, &quot;mosque&quot;], &quot;669&quot;: [&quot;n03788365&quot;, &quot;mosquito_net&quot;], &quot;670&quot;: [&quot;n03791053&quot;, &quot;motor_scooter&quot;], &quot;671&quot;: [&quot;n03792782&quot;, &quot;mountain_bike&quot;], &quot;672&quot;: [&quot;n03792972&quot;, &quot;mountain_tent&quot;], &quot;673&quot;: [&quot;n03793489&quot;, &quot;mouse&quot;], &quot;674&quot;: [&quot;n03794056&quot;, &quot;mousetrap&quot;], &quot;675&quot;: [&quot;n03796401&quot;, &quot;moving_van&quot;], &quot;676&quot;: [&quot;n03803284&quot;, &quot;muzzle&quot;], &quot;677&quot;: [&quot;n03804744&quot;, &quot;nail&quot;], &quot;678&quot;: [&quot;n03814639&quot;, &quot;neck_brace&quot;], &quot;679&quot;: [&quot;n03814906&quot;, &quot;necklace&quot;], &quot;680&quot;: [&quot;n03825788&quot;, &quot;nipple&quot;], &quot;681&quot;: [&quot;n03832673&quot;, &quot;notebook&quot;], &quot;682&quot;: [&quot;n03837869&quot;, &quot;obelisk&quot;], &quot;683&quot;: [&quot;n03838899&quot;, &quot;oboe&quot;], &quot;684&quot;: [&quot;n03840681&quot;, &quot;ocarina&quot;], &quot;685&quot;: [&quot;n03841143&quot;, &quot;odometer&quot;], &quot;686&quot;: [&quot;n03843555&quot;, &quot;oil_filter&quot;], &quot;687&quot;: [&quot;n03854065&quot;, &quot;organ&quot;], &quot;688&quot;: [&quot;n03857828&quot;, &quot;oscilloscope&quot;], &quot;689&quot;: [&quot;n03866082&quot;, &quot;overskirt&quot;], &quot;690&quot;: [&quot;n03868242&quot;, &quot;oxcart&quot;], &quot;691&quot;: [&quot;n03868863&quot;, &quot;oxygen_mask&quot;], &quot;692&quot;: [&quot;n03871628&quot;, &quot;packet&quot;], &quot;693&quot;: [&quot;n03873416&quot;, &quot;paddle&quot;], &quot;694&quot;: [&quot;n03874293&quot;, &quot;paddlewheel&quot;], &quot;695&quot;: [&quot;n03874599&quot;, &quot;padlock&quot;], &quot;696&quot;: [&quot;n03876231&quot;, &quot;paintbrush&quot;], &quot;697&quot;: [&quot;n03877472&quot;, &quot;pajama&quot;], &quot;698&quot;: [&quot;n03877845&quot;, &quot;palace&quot;], &quot;699&quot;: [&quot;n03884397&quot;, &quot;panpipe&quot;], &quot;700&quot;: [&quot;n03887697&quot;, &quot;paper_towel&quot;], &quot;701&quot;: [&quot;n03888257&quot;, &quot;parachute&quot;], &quot;702&quot;: [&quot;n03888605&quot;, &quot;parallel_bars&quot;], &quot;703&quot;: [&quot;n03891251&quot;, &quot;park_bench&quot;], &quot;704&quot;: [&quot;n03891332&quot;, &quot;parking_meter&quot;], &quot;705&quot;: [&quot;n03895866&quot;, &quot;passenger_car&quot;], &quot;706&quot;: [&quot;n03899768&quot;, &quot;patio&quot;], &quot;707&quot;: [&quot;n03902125&quot;, &quot;pay-phone&quot;], &quot;708&quot;: [&quot;n03903868&quot;, &quot;pedestal&quot;], &quot;709&quot;: [&quot;n03908618&quot;, &quot;pencil_box&quot;], &quot;710&quot;: [&quot;n03908714&quot;, &quot;pencil_sharpener&quot;], &quot;711&quot;: [&quot;n03916031&quot;, &quot;perfume&quot;], &quot;712&quot;: [&quot;n03920288&quot;, &quot;Petri_dish&quot;], &quot;713&quot;: [&quot;n03924679&quot;, &quot;photocopier&quot;], &quot;714&quot;: [&quot;n03929660&quot;, &quot;pick&quot;], &quot;715&quot;: [&quot;n03929855&quot;, &quot;pickelhaube&quot;], &quot;716&quot;: [&quot;n03930313&quot;, &quot;picket_fence&quot;], &quot;717&quot;: [&quot;n03930630&quot;, &quot;pickup&quot;], &quot;718&quot;: [&quot;n03933933&quot;, &quot;pier&quot;], &quot;719&quot;: [&quot;n03935335&quot;, &quot;piggy_bank&quot;], &quot;720&quot;: [&quot;n03937543&quot;, &quot;pill_bottle&quot;], &quot;721&quot;: [&quot;n03938244&quot;, &quot;pillow&quot;], &quot;722&quot;: [&quot;n03942813&quot;, &quot;ping-pong_ball&quot;], &quot;723&quot;: [&quot;n03944341&quot;, &quot;pinwheel&quot;], &quot;724&quot;: [&quot;n03947888&quot;, &quot;pirate&quot;], &quot;725&quot;: [&quot;n03950228&quot;, &quot;pitcher&quot;], &quot;726&quot;: [&quot;n03954731&quot;, &quot;plane&quot;], &quot;727&quot;: [&quot;n03956157&quot;, &quot;planetarium&quot;], &quot;728&quot;: [&quot;n03958227&quot;, &quot;plastic_bag&quot;], &quot;729&quot;: [&quot;n03961711&quot;, &quot;plate_rack&quot;], &quot;730&quot;: [&quot;n03967562&quot;, &quot;plow&quot;], &quot;731&quot;: [&quot;n03970156&quot;, &quot;plunger&quot;], &quot;732&quot;: [&quot;n03976467&quot;, &quot;Polaroid_camera&quot;], &quot;733&quot;: [&quot;n03976657&quot;, &quot;pole&quot;], &quot;734&quot;: [&quot;n03977966&quot;, &quot;police_van&quot;], &quot;735&quot;: [&quot;n03980874&quot;, &quot;poncho&quot;], &quot;736&quot;: [&quot;n03982430&quot;, &quot;pool_table&quot;], &quot;737&quot;: [&quot;n03983396&quot;, &quot;pop_bottle&quot;], &quot;738&quot;: [&quot;n03991062&quot;, &quot;pot&quot;], &quot;739&quot;: [&quot;n03992509&quot;, &quot;potter&#39;s_wheel&quot;], &quot;740&quot;: [&quot;n03995372&quot;, &quot;power_drill&quot;], &quot;741&quot;: [&quot;n03998194&quot;, &quot;prayer_rug&quot;], &quot;742&quot;: [&quot;n04004767&quot;, &quot;printer&quot;], &quot;743&quot;: [&quot;n04005630&quot;, &quot;prison&quot;], &quot;744&quot;: [&quot;n04008634&quot;, &quot;projectile&quot;], &quot;745&quot;: [&quot;n04009552&quot;, &quot;projector&quot;], &quot;746&quot;: [&quot;n04019541&quot;, &quot;puck&quot;], &quot;747&quot;: [&quot;n04023962&quot;, &quot;punching_bag&quot;], &quot;748&quot;: [&quot;n04026417&quot;, &quot;purse&quot;], &quot;749&quot;: [&quot;n04033901&quot;, &quot;quill&quot;], &quot;750&quot;: [&quot;n04033995&quot;, &quot;quilt&quot;], &quot;751&quot;: [&quot;n04037443&quot;, &quot;racer&quot;], &quot;752&quot;: [&quot;n04039381&quot;, &quot;racket&quot;], &quot;753&quot;: [&quot;n04040759&quot;, &quot;radiator&quot;], &quot;754&quot;: [&quot;n04041544&quot;, &quot;radio&quot;], &quot;755&quot;: [&quot;n04044716&quot;, &quot;radio_telescope&quot;], &quot;756&quot;: [&quot;n04049303&quot;, &quot;rain_barrel&quot;], &quot;757&quot;: [&quot;n04065272&quot;, &quot;recreational_vehicle&quot;], &quot;758&quot;: [&quot;n04067472&quot;, &quot;reel&quot;], &quot;759&quot;: [&quot;n04069434&quot;, &quot;reflex_camera&quot;], &quot;760&quot;: [&quot;n04070727&quot;, &quot;refrigerator&quot;], &quot;761&quot;: [&quot;n04074963&quot;, &quot;remote_control&quot;], &quot;762&quot;: [&quot;n04081281&quot;, &quot;restaurant&quot;], &quot;763&quot;: [&quot;n04086273&quot;, &quot;revolver&quot;], &quot;764&quot;: [&quot;n04090263&quot;, &quot;rifle&quot;], &quot;765&quot;: [&quot;n04099969&quot;, &quot;rocking_chair&quot;], &quot;766&quot;: [&quot;n04111531&quot;, &quot;rotisserie&quot;], &quot;767&quot;: [&quot;n04116512&quot;, &quot;rubber_eraser&quot;], &quot;768&quot;: [&quot;n04118538&quot;, &quot;rugby_ball&quot;], &quot;769&quot;: [&quot;n04118776&quot;, &quot;rule&quot;], &quot;770&quot;: [&quot;n04120489&quot;, &quot;running_shoe&quot;], &quot;771&quot;: [&quot;n04125021&quot;, &quot;safe&quot;], &quot;772&quot;: [&quot;n04127249&quot;, &quot;safety_pin&quot;], &quot;773&quot;: [&quot;n04131690&quot;, &quot;saltshaker&quot;], &quot;774&quot;: [&quot;n04133789&quot;, &quot;sandal&quot;], &quot;775&quot;: [&quot;n04136333&quot;, &quot;sarong&quot;], &quot;776&quot;: [&quot;n04141076&quot;, &quot;sax&quot;], &quot;777&quot;: [&quot;n04141327&quot;, &quot;scabbard&quot;], &quot;778&quot;: [&quot;n04141975&quot;, &quot;scale&quot;], &quot;779&quot;: [&quot;n04146614&quot;, &quot;school_bus&quot;], &quot;780&quot;: [&quot;n04147183&quot;, &quot;schooner&quot;], &quot;781&quot;: [&quot;n04149813&quot;, &quot;scoreboard&quot;], &quot;782&quot;: [&quot;n04152593&quot;, &quot;screen&quot;], &quot;783&quot;: [&quot;n04153751&quot;, &quot;screw&quot;], &quot;784&quot;: [&quot;n04154565&quot;, &quot;screwdriver&quot;], &quot;785&quot;: [&quot;n04162706&quot;, &quot;seat_belt&quot;], &quot;786&quot;: [&quot;n04179913&quot;, &quot;sewing_machine&quot;], &quot;787&quot;: [&quot;n04192698&quot;, &quot;shield&quot;], &quot;788&quot;: [&quot;n04200800&quot;, &quot;shoe_shop&quot;], &quot;789&quot;: [&quot;n04201297&quot;, &quot;shoji&quot;], &quot;790&quot;: [&quot;n04204238&quot;, &quot;shopping_basket&quot;], &quot;791&quot;: [&quot;n04204347&quot;, &quot;shopping_cart&quot;], &quot;792&quot;: [&quot;n04208210&quot;, &quot;shovel&quot;], &quot;793&quot;: [&quot;n04209133&quot;, &quot;shower_cap&quot;], &quot;794&quot;: [&quot;n04209239&quot;, &quot;shower_curtain&quot;], &quot;795&quot;: [&quot;n04228054&quot;, &quot;ski&quot;], &quot;796&quot;: [&quot;n04229816&quot;, &quot;ski_mask&quot;], &quot;797&quot;: [&quot;n04235860&quot;, &quot;sleeping_bag&quot;], &quot;798&quot;: [&quot;n04238763&quot;, &quot;slide_rule&quot;], &quot;799&quot;: [&quot;n04239074&quot;, &quot;sliding_door&quot;], &quot;800&quot;: [&quot;n04243546&quot;, &quot;slot&quot;], &quot;801&quot;: [&quot;n04251144&quot;, &quot;snorkel&quot;], &quot;802&quot;: [&quot;n04252077&quot;, &quot;snowmobile&quot;], &quot;803&quot;: [&quot;n04252225&quot;, &quot;snowplow&quot;], &quot;804&quot;: [&quot;n04254120&quot;, &quot;soap_dispenser&quot;], &quot;805&quot;: [&quot;n04254680&quot;, &quot;soccer_ball&quot;], &quot;806&quot;: [&quot;n04254777&quot;, &quot;sock&quot;], &quot;807&quot;: [&quot;n04258138&quot;, &quot;solar_dish&quot;], &quot;808&quot;: [&quot;n04259630&quot;, &quot;sombrero&quot;], &quot;809&quot;: [&quot;n04263257&quot;, &quot;soup_bowl&quot;], &quot;810&quot;: [&quot;n04264628&quot;, &quot;space_bar&quot;], &quot;811&quot;: [&quot;n04265275&quot;, &quot;space_heater&quot;], &quot;812&quot;: [&quot;n04266014&quot;, &quot;space_shuttle&quot;], &quot;813&quot;: [&quot;n04270147&quot;, &quot;spatula&quot;], &quot;814&quot;: [&quot;n04273569&quot;, &quot;speedboat&quot;], &quot;815&quot;: [&quot;n04275548&quot;, &quot;spider_web&quot;], &quot;816&quot;: [&quot;n04277352&quot;, &quot;spindle&quot;], &quot;817&quot;: [&quot;n04285008&quot;, &quot;sports_car&quot;], &quot;818&quot;: [&quot;n04286575&quot;, &quot;spotlight&quot;], &quot;819&quot;: [&quot;n04296562&quot;, &quot;stage&quot;], &quot;820&quot;: [&quot;n04310018&quot;, &quot;steam_locomotive&quot;], &quot;821&quot;: [&quot;n04311004&quot;, &quot;steel_arch_bridge&quot;], &quot;822&quot;: [&quot;n04311174&quot;, &quot;steel_drum&quot;], &quot;823&quot;: [&quot;n04317175&quot;, &quot;stethoscope&quot;], &quot;824&quot;: [&quot;n04325704&quot;, &quot;stole&quot;], &quot;825&quot;: [&quot;n04326547&quot;, &quot;stone_wall&quot;], &quot;826&quot;: [&quot;n04328186&quot;, &quot;stopwatch&quot;], &quot;827&quot;: [&quot;n04330267&quot;, &quot;stove&quot;], &quot;828&quot;: [&quot;n04332243&quot;, &quot;strainer&quot;], &quot;829&quot;: [&quot;n04335435&quot;, &quot;streetcar&quot;], &quot;830&quot;: [&quot;n04336792&quot;, &quot;stretcher&quot;], &quot;831&quot;: [&quot;n04344873&quot;, &quot;studio_couch&quot;], &quot;832&quot;: [&quot;n04346328&quot;, &quot;stupa&quot;], &quot;833&quot;: [&quot;n04347754&quot;, &quot;submarine&quot;], &quot;834&quot;: [&quot;n04350905&quot;, &quot;suit&quot;], &quot;835&quot;: [&quot;n04355338&quot;, &quot;sundial&quot;], &quot;836&quot;: [&quot;n04355933&quot;, &quot;sunglass&quot;], &quot;837&quot;: [&quot;n04356056&quot;, &quot;sunglasses&quot;], &quot;838&quot;: [&quot;n04357314&quot;, &quot;sunscreen&quot;], &quot;839&quot;: [&quot;n04366367&quot;, &quot;suspension_bridge&quot;], &quot;840&quot;: [&quot;n04367480&quot;, &quot;swab&quot;], &quot;841&quot;: [&quot;n04370456&quot;, &quot;sweatshirt&quot;], &quot;842&quot;: [&quot;n04371430&quot;, &quot;swimming_trunks&quot;], &quot;843&quot;: [&quot;n04371774&quot;, &quot;swing&quot;], &quot;844&quot;: [&quot;n04372370&quot;, &quot;switch&quot;], &quot;845&quot;: [&quot;n04376876&quot;, &quot;syringe&quot;], &quot;846&quot;: [&quot;n04380533&quot;, &quot;table_lamp&quot;], &quot;847&quot;: [&quot;n04389033&quot;, &quot;tank&quot;], &quot;848&quot;: [&quot;n04392985&quot;, &quot;tape_player&quot;], &quot;849&quot;: [&quot;n04398044&quot;, &quot;teapot&quot;], &quot;850&quot;: [&quot;n04399382&quot;, &quot;teddy&quot;], &quot;851&quot;: [&quot;n04404412&quot;, &quot;television&quot;], &quot;852&quot;: [&quot;n04409515&quot;, &quot;tennis_ball&quot;], &quot;853&quot;: [&quot;n04417672&quot;, &quot;thatch&quot;], &quot;854&quot;: [&quot;n04418357&quot;, &quot;theater_curtain&quot;], &quot;855&quot;: [&quot;n04423845&quot;, &quot;thimble&quot;], &quot;856&quot;: [&quot;n04428191&quot;, &quot;thresher&quot;], &quot;857&quot;: [&quot;n04429376&quot;, &quot;throne&quot;], &quot;858&quot;: [&quot;n04435653&quot;, &quot;tile_roof&quot;], &quot;859&quot;: [&quot;n04442312&quot;, &quot;toaster&quot;], &quot;860&quot;: [&quot;n04443257&quot;, &quot;tobacco_shop&quot;], &quot;861&quot;: [&quot;n04447861&quot;, &quot;toilet_seat&quot;], &quot;862&quot;: [&quot;n04456115&quot;, &quot;torch&quot;], &quot;863&quot;: [&quot;n04458633&quot;, &quot;totem_pole&quot;], &quot;864&quot;: [&quot;n04461696&quot;, &quot;tow_truck&quot;], &quot;865&quot;: [&quot;n04462240&quot;, &quot;toyshop&quot;], &quot;866&quot;: [&quot;n04465501&quot;, &quot;tractor&quot;], &quot;867&quot;: [&quot;n04467665&quot;, &quot;trailer_truck&quot;], &quot;868&quot;: [&quot;n04476259&quot;, &quot;tray&quot;], &quot;869&quot;: [&quot;n04479046&quot;, &quot;trench_coat&quot;], &quot;870&quot;: [&quot;n04482393&quot;, &quot;tricycle&quot;], &quot;871&quot;: [&quot;n04483307&quot;, &quot;trimaran&quot;], &quot;872&quot;: [&quot;n04485082&quot;, &quot;tripod&quot;], &quot;873&quot;: [&quot;n04486054&quot;, &quot;triumphal_arch&quot;], &quot;874&quot;: [&quot;n04487081&quot;, &quot;trolleybus&quot;], &quot;875&quot;: [&quot;n04487394&quot;, &quot;trombone&quot;], &quot;876&quot;: [&quot;n04493381&quot;, &quot;tub&quot;], &quot;877&quot;: [&quot;n04501370&quot;, &quot;turnstile&quot;], &quot;878&quot;: [&quot;n04505470&quot;, &quot;typewriter_keyboard&quot;], &quot;879&quot;: [&quot;n04507155&quot;, &quot;umbrella&quot;], &quot;880&quot;: [&quot;n04509417&quot;, &quot;unicycle&quot;], &quot;881&quot;: [&quot;n04515003&quot;, &quot;upright&quot;], &quot;882&quot;: [&quot;n04517823&quot;, &quot;vacuum&quot;], &quot;883&quot;: [&quot;n04522168&quot;, &quot;vase&quot;], &quot;884&quot;: [&quot;n04523525&quot;, &quot;vault&quot;], &quot;885&quot;: [&quot;n04525038&quot;, &quot;velvet&quot;], &quot;886&quot;: [&quot;n04525305&quot;, &quot;vending_machine&quot;], &quot;887&quot;: [&quot;n04532106&quot;, &quot;vestment&quot;], &quot;888&quot;: [&quot;n04532670&quot;, &quot;viaduct&quot;], &quot;889&quot;: [&quot;n04536866&quot;, &quot;violin&quot;], &quot;890&quot;: [&quot;n04540053&quot;, &quot;volleyball&quot;], &quot;891&quot;: [&quot;n04542943&quot;, &quot;waffle_iron&quot;], &quot;892&quot;: [&quot;n04548280&quot;, &quot;wall_clock&quot;], &quot;893&quot;: [&quot;n04548362&quot;, &quot;wallet&quot;], &quot;894&quot;: [&quot;n04550184&quot;, &quot;wardrobe&quot;], &quot;895&quot;: [&quot;n04552348&quot;, &quot;warplane&quot;], &quot;896&quot;: [&quot;n04553703&quot;, &quot;washbasin&quot;], &quot;897&quot;: [&quot;n04554684&quot;, &quot;washer&quot;], &quot;898&quot;: [&quot;n04557648&quot;, &quot;water_bottle&quot;], &quot;899&quot;: [&quot;n04560804&quot;, &quot;water_jug&quot;], &quot;900&quot;: [&quot;n04562935&quot;, &quot;water_tower&quot;], &quot;901&quot;: [&quot;n04579145&quot;, &quot;whiskey_jug&quot;], &quot;902&quot;: [&quot;n04579432&quot;, &quot;whistle&quot;], &quot;903&quot;: [&quot;n04584207&quot;, &quot;wig&quot;], &quot;904&quot;: [&quot;n04589890&quot;, &quot;window_screen&quot;], &quot;905&quot;: [&quot;n04590129&quot;, &quot;window_shade&quot;], &quot;906&quot;: [&quot;n04591157&quot;, &quot;Windsor_tie&quot;], &quot;907&quot;: [&quot;n04591713&quot;, &quot;wine_bottle&quot;], &quot;908&quot;: [&quot;n04592741&quot;, &quot;wing&quot;], &quot;909&quot;: [&quot;n04596742&quot;, &quot;wok&quot;], &quot;910&quot;: [&quot;n04597913&quot;, &quot;wooden_spoon&quot;], &quot;911&quot;: [&quot;n04599235&quot;, &quot;wool&quot;], &quot;912&quot;: [&quot;n04604644&quot;, &quot;worm_fence&quot;], &quot;913&quot;: [&quot;n04606251&quot;, &quot;wreck&quot;], &quot;914&quot;: [&quot;n04612504&quot;, &quot;yawl&quot;], &quot;915&quot;: [&quot;n04613696&quot;, &quot;yurt&quot;], &quot;916&quot;: [&quot;n06359193&quot;, &quot;web_site&quot;], &quot;917&quot;: [&quot;n06596364&quot;, &quot;comic_book&quot;], &quot;918&quot;: [&quot;n06785654&quot;, &quot;crossword_puzzle&quot;], &quot;919&quot;: [&quot;n06794110&quot;, &quot;street_sign&quot;], &quot;920&quot;: [&quot;n06874185&quot;, &quot;traffic_light&quot;], &quot;921&quot;: [&quot;n07248320&quot;, &quot;book_jacket&quot;], &quot;922&quot;: [&quot;n07565083&quot;, &quot;menu&quot;], &quot;923&quot;: [&quot;n07579787&quot;, &quot;plate&quot;], &quot;924&quot;: [&quot;n07583066&quot;, &quot;guacamole&quot;], &quot;925&quot;: [&quot;n07584110&quot;, &quot;consomme&quot;], &quot;926&quot;: [&quot;n07590611&quot;, &quot;hot_pot&quot;], &quot;927&quot;: [&quot;n07613480&quot;, &quot;trifle&quot;], &quot;928&quot;: [&quot;n07614500&quot;, &quot;ice_cream&quot;], &quot;929&quot;: [&quot;n07615774&quot;, &quot;ice_lolly&quot;], &quot;930&quot;: [&quot;n07684084&quot;, &quot;French_loaf&quot;], &quot;931&quot;: [&quot;n07693725&quot;, &quot;bagel&quot;], &quot;932&quot;: [&quot;n07695742&quot;, &quot;pretzel&quot;], &quot;933&quot;: [&quot;n07697313&quot;, &quot;cheeseburger&quot;], &quot;934&quot;: [&quot;n07697537&quot;, &quot;hotdog&quot;], &quot;935&quot;: [&quot;n07711569&quot;, &quot;mashed_potato&quot;], &quot;936&quot;: [&quot;n07714571&quot;, &quot;head_cabbage&quot;], &quot;937&quot;: [&quot;n07714990&quot;, &quot;broccoli&quot;], &quot;938&quot;: [&quot;n07715103&quot;, &quot;cauliflower&quot;], &quot;939&quot;: [&quot;n07716358&quot;, &quot;zucchini&quot;], &quot;940&quot;: [&quot;n07716906&quot;, &quot;spaghetti_squash&quot;], &quot;941&quot;: [&quot;n07717410&quot;, &quot;acorn_squash&quot;], &quot;942&quot;: [&quot;n07717556&quot;, &quot;butternut_squash&quot;], &quot;943&quot;: [&quot;n07718472&quot;, &quot;cucumber&quot;], &quot;944&quot;: [&quot;n07718747&quot;, &quot;artichoke&quot;], &quot;945&quot;: [&quot;n07720875&quot;, &quot;bell_pepper&quot;], &quot;946&quot;: [&quot;n07730033&quot;, &quot;cardoon&quot;], &quot;947&quot;: [&quot;n07734744&quot;, &quot;mushroom&quot;], &quot;948&quot;: [&quot;n07742313&quot;, &quot;Granny_Smith&quot;], &quot;949&quot;: [&quot;n07745940&quot;, &quot;strawberry&quot;], &quot;950&quot;: [&quot;n07747607&quot;, &quot;orange&quot;], &quot;951&quot;: [&quot;n07749582&quot;, &quot;lemon&quot;], &quot;952&quot;: [&quot;n07753113&quot;, &quot;fig&quot;], &quot;953&quot;: [&quot;n07753275&quot;, &quot;pineapple&quot;], &quot;954&quot;: [&quot;n07753592&quot;, &quot;banana&quot;], &quot;955&quot;: [&quot;n07754684&quot;, &quot;jackfruit&quot;], &quot;956&quot;: [&quot;n07760859&quot;, &quot;custard_apple&quot;], &quot;957&quot;: [&quot;n07768694&quot;, &quot;pomegranate&quot;], &quot;958&quot;: [&quot;n07802026&quot;, &quot;hay&quot;], &quot;959&quot;: [&quot;n07831146&quot;, &quot;carbonara&quot;], &quot;960&quot;: [&quot;n07836838&quot;, &quot;chocolate_sauce&quot;], &quot;961&quot;: [&quot;n07860988&quot;, &quot;dough&quot;], &quot;962&quot;: [&quot;n07871810&quot;, &quot;meat_loaf&quot;], &quot;963&quot;: [&quot;n07873807&quot;, &quot;pizza&quot;], &quot;964&quot;: [&quot;n07875152&quot;, &quot;potpie&quot;], &quot;965&quot;: [&quot;n07880968&quot;, &quot;burrito&quot;], &quot;966&quot;: [&quot;n07892512&quot;, &quot;red_wine&quot;], &quot;967&quot;: [&quot;n07920052&quot;, &quot;espresso&quot;], &quot;968&quot;: [&quot;n07930864&quot;, &quot;cup&quot;], &quot;969&quot;: [&quot;n07932039&quot;, &quot;eggnog&quot;], &quot;970&quot;: [&quot;n09193705&quot;, &quot;alp&quot;], &quot;971&quot;: [&quot;n09229709&quot;, &quot;bubble&quot;], &quot;972&quot;: [&quot;n09246464&quot;, &quot;cliff&quot;], &quot;973&quot;: [&quot;n09256479&quot;, &quot;coral_reef&quot;], &quot;974&quot;: [&quot;n09288635&quot;, &quot;geyser&quot;], &quot;975&quot;: [&quot;n09332890&quot;, &quot;lakeside&quot;], &quot;976&quot;: [&quot;n09399592&quot;, &quot;promontory&quot;], &quot;977&quot;: [&quot;n09421951&quot;, &quot;sandbar&quot;], &quot;978&quot;: [&quot;n09428293&quot;, &quot;seashore&quot;], &quot;979&quot;: [&quot;n09468604&quot;, &quot;valley&quot;], &quot;980&quot;: [&quot;n09472597&quot;, &quot;volcano&quot;], &quot;981&quot;: [&quot;n09835506&quot;, &quot;ballplayer&quot;], &quot;982&quot;: [&quot;n10148035&quot;, &quot;groom&quot;], &quot;983&quot;: [&quot;n10565667&quot;, &quot;scuba_diver&quot;], &quot;984&quot;: [&quot;n11879895&quot;, &quot;rapeseed&quot;], &quot;985&quot;: [&quot;n11939491&quot;, &quot;daisy&quot;], &quot;986&quot;: [&quot;n12057211&quot;, &quot;yellow_lady&#39;s_slipper&quot;], &quot;987&quot;: [&quot;n12144580&quot;, &quot;corn&quot;], &quot;988&quot;: [&quot;n12267677&quot;, &quot;acorn&quot;], &quot;989&quot;: [&quot;n12620546&quot;, &quot;hip&quot;], &quot;990&quot;: [&quot;n12768682&quot;, &quot;buckeye&quot;], &quot;991&quot;: [&quot;n12985857&quot;, &quot;coral_fungus&quot;], &quot;992&quot;: [&quot;n12998815&quot;, &quot;agaric&quot;], &quot;993&quot;: [&quot;n13037406&quot;, &quot;gyromitra&quot;], &quot;994&quot;: [&quot;n13040303&quot;, &quot;stinkhorn&quot;], &quot;995&quot;: [&quot;n13044778&quot;, &quot;earthstar&quot;], &quot;996&quot;: [&quot;n13052670&quot;, &quot;hen-of-the-woods&quot;], &quot;997&quot;: [&quot;n13054560&quot;, &quot;bolete&quot;], &quot;998&quot;: [&quot;n13133613&quot;, &quot;ear&quot;], &quot;999&quot;: [&quot;n15075141&quot;, &quot;toilet_tissue&quot;]}</td>
+      </tr>
+</table>
+
+  <details class="details-reset details-overlay BlobToolbar position-absolute js-file-line-actions dropdown d-none" aria-hidden="true">
+    <summary class="btn-octicon ml-0 px-2 p-0 bg-white border border-gray-dark rounded-1" aria-label="Inline file action toolbar">
+      <svg class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+    </summary>
+    <details-menu>
+      <ul class="BlobToolbar-dropdown dropdown-menu dropdown-menu-se mt-2" style="width:185px">
+        <li>
+          <clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-lines" style="cursor:pointer;">
+            Copy lines
+          </clipboard-copy>
+        </li>
+        <li>
+          <clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-permalink" style="cursor:pointer;">
+            Copy permalink
+          </clipboard-copy>
+        </li>
+        <li><a class="dropdown-item js-update-url-with-hash" id="js-view-git-blame" role="menuitem" href="/mirceast/cnn-dog-breed-classifier/blame/2b55c0c7fb5254099792803b29bfba77db7d6d01/imagenet_class_index.json">View git blame</a></li>
+          <li><a class="dropdown-item" id="js-new-issue" role="menuitem" href="/mirceast/cnn-dog-breed-classifier/issues/new">Reference in new issue</a></li>
+      </ul>
+    </details-menu>
+  </details>
+
+  </div>
+
+    </div>
+
+  
+
+  <details class="details-reset details-overlay details-overlay-dark">
+    <summary data-hotkey="l" aria-label="Jump to line"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast linejump" aria-label="Jump to line">
+      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-jump-to-line-form Box-body d-flex" action="" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+        <input class="form-control flex-auto mr-3 linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
+        <button type="submit" class="btn" data-close-dialog>Go</button>
+</form>    </details-dialog>
+  </details>
+
+
+
+  </div>
+</div>
+
+    </main>
+  </div>
+  
+
+  </div>
+
+        
+<div class="footer container-lg width-full p-responsive" role="contentinfo">
+  <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      <li class="mr-3 mr-lg-0">&copy; 2019 <span title="0.60585s from unicorn-6b795d85b6-nzxld">GitHub</span>, Inc.</li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to security, text:security" href="https://github.com/security">Security</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://githubstatus.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com">Help</a></li>
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mx-lg-4" href="https://github.com">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://github.com/pricing" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
+      <li class="mr-3 mr-lg-0"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3 mr-lg-0"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://github.blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+    
+    <script crossorigin="anonymous" integrity="sha512-qe2Lb2mMm7Gz04h1UAt9TjOwaOdtkJ5UDU6PIxkMNAnUqvTqDIvz4jLVvlpg6jz84BHgsU7Aduwtf7G5/EECeA==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-06b5f3e8.js"></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-g3qlS7TcptE+xOxkHQB7RQoA2Q0gvGCoZc3tPPQOO2G2qJZ/qW3SlylDe+S6LE+1x24rFVcaAjkTY0Sb5zeZ4w==" type="application/javascript" src="https://github.githubassets.com/assets/github-bootstrap-c3479758.js"></script>
+    
+    
+    
+  <div class="js-stale-session-flash flash flash-warn flash-banner" hidden
+    >
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <span class="js-stale-session-flash-signed-in" hidden>You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="js-stale-session-flash-signed-out" hidden>You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <template id="site-details-dialog">
+  <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark hx_rsm" open>
+    <summary role="button" aria-label="Close dialog"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast hx_rsm-dialog hx_rsm-modal">
+      <button class="Box-btn-octicon m-0 btn-octicon position-absolute right-0 top-0" type="button" aria-label="Close dialog" data-close-dialog>
+        <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+      </button>
+      <div class="octocat-spinner my-6 js-details-dialog-spinner"></div>
+    </details-dialog>
+  </details>
+</template>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+  <div aria-live="polite" class="js-global-screen-reader-notice sr-only"></div>
+
+  </body>
+</html>
+
